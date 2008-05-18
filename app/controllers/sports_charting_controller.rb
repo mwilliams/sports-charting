@@ -1,6 +1,5 @@
 require 'team'
 require 'game'
-
 class SportsChartingController < ApplicationController
 
   def index
@@ -15,5 +14,7 @@ class SportsChartingController < ApplicationController
   end
 
   def game
+    @id = params[:id]
+    @game = AYWT::Game.get_game_details(@id)
   end
 end

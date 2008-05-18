@@ -3,6 +3,8 @@ ActionController::Routing::Routes.draw do |map|
 
   map.connect 'sports_charting/teams/:sport', :controller => 'sports_charting', :action => 'teams'
   
+  map.connect 'sports_chaeting/game/:id', :controller => 'sports_charting', :action => 'game' 
+  
   # Sample of regular route:
   #   map.connect 'products/:id', :controller => 'catalog', :action => 'view'
   # Keep in mind you can assign values other than :controller and :action

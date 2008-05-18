@@ -4,7 +4,6 @@ module AYWT
     AYWT_URL = 'http://areyouwatchingthis.com/api/'
  
     def self.get_teams_for_sport(sport)
-      #http://areyouwatchingthis.com/api/teams?sport=mlb
       get_data("teams?sport=#{sport}")
     end   
     
@@ -17,6 +16,7 @@ module AYWT
     end   
     
     private
+    
     def self.get_data(endpoint)
       XmlSimple.xml_in(Net::HTTP.get_response(URI.parse([AYWT_URL,endpoint].join)).body)
     end
