@@ -1,8 +1,12 @@
-require 'are_you_watching_this'
-
+require 'base'
+require 'game'
+require 'team'
+ 
 class GamesController < ApplicationController
-
+ 
   def index
-    @game_information = AYWT::AreYouWatchingThis.get_game
+    @game = AYWT::Team.get_teams_for_sport("mlb")
+    p 'break'
   end
 end
+ 
