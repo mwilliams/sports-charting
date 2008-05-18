@@ -1,19 +1,10 @@
-# 
-# To change this template, choose Tools | Templates
-# and open the template in the editor.
 require 'base'
 
 module AYWT
   class Game < Base
     attr_accessor :id, :description, :sport, :teams, :time, :time_left, :points, :news, :date, :rationale
     
-    def get_games(sport)
-      @game = AYWT::Game.new
-      @details = AYWT::Base.get_games_for_sport(sport)
-    end
-    
-    
-    def get_game_details(id)
+    def self.get_game_details(id)
       @game = AYWT::Game.new 
       @teams = []
       @details = AYWT::Base.get_game_details(id)
@@ -40,6 +31,7 @@ module AYWT
       end
       @game
     end
+
     
   end
 end
