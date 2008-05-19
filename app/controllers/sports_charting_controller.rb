@@ -11,6 +11,8 @@ class SportsChartingController < ApplicationController
   end
 
   def games
+    @team_id = params[:id]
+    @games = AYWT::Game.get_games_for_team(@team_id)
   end
 
   def game

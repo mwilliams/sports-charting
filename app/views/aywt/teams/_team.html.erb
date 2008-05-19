@@ -1,0 +1,3 @@
+<% unless !team.team_name  %>
+  <li><%= link_to [team.city,team.team_name].join(" - "), :controller => 'sports_charting', :action => 'games', :id => team.id %></li>
+<% end %>

@@ -7,8 +7,8 @@ module AYWT
       get_data("teams?sport=#{sport}")
     end   
     
-    def self.get_games_for_sport(sport)
-      get_data("games?sport=#{sport}")
+    def self.get_games_for_team(team)
+      get_data("games?teamID=#{team}")
     end
     
     def self.get_game_details(game_id)
