@@ -1,4 +1,10 @@
 <h1>Games listing</h1>
+<% if !@games.nil? %>
 <ul>
   <%= render :partial => @games %>
 </ul>
+<% else %>
+  <h3>There are no games currently scheduled.</h3>
+<% end %>
+
+<%= debug @games %>

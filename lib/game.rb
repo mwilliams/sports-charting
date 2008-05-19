@@ -11,7 +11,11 @@ module AYWT
     
     def self.get_games_for_team(team_id)
       @games_hash = AYWT::Base.get_games_for_team(team_id)
-      build_games_object_from_hash(@games_hash)
+      unless @games_hash["games"][0]["count"] == "0"
+        build_games_object_from_hash(@games_hash)
+      else
+        nil
+      end
     end
 
     private
