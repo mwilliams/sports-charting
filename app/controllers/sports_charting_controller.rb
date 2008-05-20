@@ -1,5 +1,6 @@
 require 'team'
 require 'game'
+require 'google_charts'
 class SportsChartingController < ApplicationController
 
   def index
@@ -18,5 +19,11 @@ class SportsChartingController < ApplicationController
   def game
     @id = params[:id]
     @game = AYWT::Game.get_game_details(@id)
+    @away_team = @game.teams[0]["name"]
+    @home_team = @game.teams[1]["name"]
+    @away_team_score = @game.teams[0]["score"]
+    @home_team_score = @game.teams[1]["score"] 
+    @game_score_pie_chart = GCharts::GoogleCharts.build_score_pie_chart(@home_team, @home_team_score, @away_team, @away_team_score)
+    @game_points_meter = GCharts::GoogleCharts.build_google_o_meter_chart(@game.points[0]["content"])
   end
 end

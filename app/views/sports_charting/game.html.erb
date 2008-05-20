@@ -1,1 +1,16 @@
-<%= debug @game %>
+<center>
+  <h1><%= [@away_team,@home_team].join(" vs. ") %></h1>
+  <p><%= image_tag @game_score_pie_chart %>
+  <h2>Excitement Level:</h2>
+  <p><%= image_tag @game_points_meter %>
+  
+  <h3>
+    <ul>
+      <%@game.news.each do |news| %>
+        <% news["story"].each do |story| %>      
+          <li><%= link_to story["title"], story["link"].to_s %></li>
+        <% end %>
+      <% end %>
+    </ul>
+  </h3>
+</center>
