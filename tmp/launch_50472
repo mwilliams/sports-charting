@@ -1,8 +1,0 @@
-mkdir -p {tmp,log}
-rm -f /userapps/17518/log/crashlog.50472.log
-mongrel_rails start -p 50472 -e development > /userapps/17518/log/mongrel.50472.log 2>&1
-
-# only report the crashlog it exited without getting an explicit kill signal
-if [ `tail -n 20 /userapps/17518/log/mongrel.50472.log | grep 'signal received.$' | wc -l` = 0 ]; then
-	cp /userapps/17518/log/mongrel.50472.log /userapps/17518/log/crashlog.50472.log
-fi

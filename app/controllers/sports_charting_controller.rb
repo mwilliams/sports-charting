@@ -1,3 +1,4 @@
+# Include external libraries to interact with the web services
 require 'team'
 require 'game'
 require 'google_charts'
@@ -7,16 +8,22 @@ class SportsChartingController < ApplicationController
   end
 
   def teams
+    # Read the sport parameter from the URL
     @sport = params[:sport]
+    # Build the Array of Team objects for display 
     @teams = AYWT::Team.get_teams_for_sport(@sport)
   end
 
   def games
+    # Read the team ID number from the URL
     @team_id = params[:id]
+    # Build the Array of Game objects associated with a specific team
     @games = AYWT::Game.get_games_for_team(@team_id)
   end
 
   def game
+    # Manually built hash of Team ID's from AreYouWatchingThis.com with their
+    # associated state for use with the function to build a map
     @team_hash = {
       "13375" => "AZ", # Diamondbacks
       "13376" => "GA", # Braves
@@ -49,16 +56,22 @@ class SportsChartingController < ApplicationController
       "7078" => "", # Blue Jays
       "13390" => "VA"  # Nationals
     }
+    # Read the ID of the game from the URL
     @id = params[:id]
+    # Populate the @game variable with the details of the event
     @game = AYWT::Game.get_game_details(@id)
     @away_team = @game.teams[0]["name"]
     @away_team_id = @game.teams[0]["id"]
     @home_team = @game.teams[1]["name"]
     @home_team_id = @game.teams[1]["id"]
+    # If there is no score element, set the score variables to 0 so the pie chart doesn't return an error
     @game.teams[0]["score"] ? @away_team_score = @game.teams[0]["score"] : @away_team_score = "0"
     @game.teams[1]["score"] ? @home_team_score = @game.teams[1]["score"] : @home_team_score = "0"
+    # Build the Pie Chart URL using the function in the GChart library
     @game_score_pie_chart = GCharts::GoogleCharts.build_score_pie_chart(@home_team, @home_team_score, @away_team, @away_team_score)
+    # Build the Google-o-Meter using the function in the GChart library
     @game_points_meter = GCharts::GoogleCharts.build_google_o_meter_chart(@game.points[0]["content"])
+    # Build the US Map with the states of each team involved using the hash that was built above
     @game_map = GCharts::GoogleCharts.build_map(@team_hash[@home_team_id],@team_hash[@away_team_id])
   end
 end
