@@ -18,7 +18,12 @@ class GameUnitTest < Test::Unit::TestCase
   def test_get_games_for_teams
     @details = AYWT::Game.get_games_for_team(7073)
     assert_kind_of Array, @details
-    assert_equal(12, @details.length)
+    assert_kind_of AYWT::Game, @details.first
+  end
+  
+  def test_get_games_for_teams_fails
+    @details = AYWT::Game.get_games_for_team(13311)
+    assert_equal(nil, @details)
   end
   
 end

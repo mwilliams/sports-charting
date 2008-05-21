@@ -553,7 +553,7 @@ span.run100 {
 </style>
     </head>
   <body><h3>C0 code coverage information</h3>
-    <p>Generated on Mon May 19 21:22:20 -0400 2008 with <a href='http://eigenclass.org/hiki/rcov'>rcov 0.8.1.2</a>
+    <p>Generated on Tue May 20 22:40:27 -0400 2008 with <a href='http://eigenclass.org/hiki/rcov'>rcov 0.8.1.2</a>
       </p>
     <hr/>
     <pre><span class='marked0'>Code reported as executed by Ruby looks like this...
@@ -571,9 +571,9 @@ span.run100 {
     </thead>
   <tbody><tr class='light'><td><a href='app-controllers-sports_charting_controller_rb.html'>app/controllers/sports_charting_controller.rb</a>
         </td>
-      <td class='lines_total'><tt>30</tt>
+      <td class='lines_total'><tt>64</tt>
         </td>
-      <td class='lines_code'><tt>26</tt>
+      <td class='lines_code'><tt>60</tt>
         </td>
       <td><table cellspacing='0' cellpadding='0' align='right'><tr><td><tt class='coverage_total'>100.0%</tt>
               &nbsp;</td>
@@ -617,17 +617,51 @@ span.run100 {
 </span><span class="inferred1"><a name="line17"></a>17   end
 </span><span class="inferred0"><a name="line18"></a>18 
 </span><span class="marked1"><a name="line19"></a>19   def game
-</span><span class="marked0"><a name="line20"></a>20     @id = params[:id]
-</span><span class="marked1"><a name="line21"></a>21     @game = AYWT::Game.get_game_details(@id)
-</span><span class="marked0"><a name="line22"></a>22     @away_team = @game.teams[0][&quot;name&quot;]
-</span><span class="marked1"><a name="line23"></a>23     @home_team = @game.teams[1][&quot;name&quot;]
-</span><span class="marked0"><a name="line24"></a>24     @game.teams[0][&quot;score&quot;] ? @away_team_score = @game.teams[0][&quot;score&quot;] : @away_team_score = &quot;0&quot;
-</span><span class="marked1"><a name="line25"></a>25     @game.teams[1][&quot;score&quot;] ? @home_team_score = @game.teams[1][&quot;score&quot;] : @home_team_score = &quot;0&quot;
-</span><span class="marked0"><a name="line26"></a>26     @game_score_pie_chart = GCharts::GoogleCharts.build_score_pie_chart(@home_team, @home_team_score, @away_team, @away_team_score)
-</span><span class="marked1"><a name="line27"></a>27     @game_points_meter = GCharts::GoogleCharts.build_google_o_meter_chart(@game.points[0][&quot;content&quot;])
-</span><span class="marked0"><a name="line28"></a>28     @game_map = GCharts::GoogleCharts.build_map(&quot;NY&quot;,&quot;FL&quot;)
-</span><span class="inferred1"><a name="line29"></a>29   end
-</span><span class="inferred0"><a name="line30"></a>30 end
+</span><span class="marked0"><a name="line20"></a>20     @team_hash = {
+</span><span class="inferred1"><a name="line21"></a>21       &quot;13375&quot; =&gt; &quot;AZ&quot;, # Diamondbacks
+</span><span class="inferred0"><a name="line22"></a>22       &quot;13376&quot; =&gt; &quot;GA&quot;, # Braves
+</span><span class="inferred1"><a name="line23"></a>23       &quot;7065&quot; =&gt; &quot;MD&quot;, # Orioles
+</span><span class="inferred0"><a name="line24"></a>24       &quot;7066&quot; =&gt; &quot;MA&quot;, # Red Sox
+</span><span class="inferred1"><a name="line25"></a>25       &quot;13377&quot; =&gt; &quot;IL&quot;, # Cubs
+</span><span class="inferred0"><a name="line26"></a>26       &quot;7067&quot; =&gt; &quot;IL&quot;, # White Sox
+</span><span class="inferred1"><a name="line27"></a>27       &quot;13378&quot; =&gt; &quot;OH&quot;, # Reds
+</span><span class="inferred0"><a name="line28"></a>28       &quot;7068&quot; =&gt; &quot;OH&quot;, # Indians
+</span><span class="inferred1"><a name="line29"></a>29       &quot;13379&quot; =&gt; &quot;CO&quot;,# Rockies
+</span><span class="inferred0"><a name="line30"></a>30       &quot;7069&quot; =&gt; &quot;MI&quot;, # Tigers
+</span><span class="inferred1"><a name="line31"></a>31       &quot;13380&quot; =&gt; &quot;FL&quot;, # Marlins
+</span><span class="inferred0"><a name="line32"></a>32       &quot;13381&quot; =&gt; &quot;TX&quot;, # Astros
+</span><span class="inferred1"><a name="line33"></a>33       &quot;7070&quot; =&gt; &quot;MO&quot;, # Royals
+</span><span class="inferred0"><a name="line34"></a>34       &quot;13382&quot; =&gt; &quot;CA&quot;, # Dodgers
+</span><span class="inferred1"><a name="line35"></a>35       &quot;7071&quot; =&gt; &quot;CA&quot;, # Angels
+</span><span class="inferred0"><a name="line36"></a>36       &quot;13383&quot; =&gt; &quot;WI&quot;, # Brewers
+</span><span class="inferred1"><a name="line37"></a>37       &quot;7072&quot; =&gt; &quot;MN&quot;, # Twins
+</span><span class="inferred0"><a name="line38"></a>38       &quot;7073&quot; =&gt; &quot;NY&quot;, # Yankees
+</span><span class="inferred1"><a name="line39"></a>39       &quot;13384&quot; =&gt; &quot;NY&quot;,# Mets
+</span><span class="inferred0"><a name="line40"></a>40       &quot;7074&quot; =&gt; &quot;CA&quot;, # Athletics
+</span><span class="inferred1"><a name="line41"></a>41       &quot;13385&quot; =&gt; &quot;PA&quot;, # Phillies
+</span><span class="inferred0"><a name="line42"></a>42       &quot;13386&quot; =&gt; &quot;PA&quot;, # Pirates
+</span><span class="inferred1"><a name="line43"></a>43       &quot;13387&quot; =&gt; &quot;CA&quot;, # Padres
+</span><span class="inferred0"><a name="line44"></a>44       &quot;13388&quot; =&gt; &quot;CA&quot;, # Giants
+</span><span class="inferred1"><a name="line45"></a>45       &quot;7075&quot; =&gt; &quot;FL&quot;, # Mariners
+</span><span class="inferred0"><a name="line46"></a>46       &quot;13389&quot; =&gt; &quot;MS&quot;, # Cardinals
+</span><span class="inferred1"><a name="line47"></a>47       &quot;7076&quot; =&gt; &quot;FL&quot;, # Rays
+</span><span class="inferred0"><a name="line48"></a>48       &quot;7077&quot; =&gt; &quot;TX&quot;, # Rangers
+</span><span class="inferred1"><a name="line49"></a>49       &quot;7078&quot; =&gt; &quot;&quot;, # Blue Jays
+</span><span class="inferred0"><a name="line50"></a>50       &quot;13390&quot; =&gt; &quot;VA&quot;  # Nationals
+</span><span class="inferred1"><a name="line51"></a>51     }
+</span><span class="marked0"><a name="line52"></a>52     @id = params[:id]
+</span><span class="marked1"><a name="line53"></a>53     @game = AYWT::Game.get_game_details(@id)
+</span><span class="marked0"><a name="line54"></a>54     @away_team = @game.teams[0][&quot;name&quot;]
+</span><span class="marked1"><a name="line55"></a>55     @away_team_id = @game.teams[0][&quot;id&quot;]
+</span><span class="marked0"><a name="line56"></a>56     @home_team = @game.teams[1][&quot;name&quot;]
+</span><span class="marked1"><a name="line57"></a>57     @home_team_id = @game.teams[1][&quot;id&quot;]
+</span><span class="marked0"><a name="line58"></a>58     @game.teams[0][&quot;score&quot;] ? @away_team_score = @game.teams[0][&quot;score&quot;] : @away_team_score = &quot;0&quot;
+</span><span class="marked1"><a name="line59"></a>59     @game.teams[1][&quot;score&quot;] ? @home_team_score = @game.teams[1][&quot;score&quot;] : @home_team_score = &quot;0&quot;
+</span><span class="marked0"><a name="line60"></a>60     @game_score_pie_chart = GCharts::GoogleCharts.build_score_pie_chart(@home_team, @home_team_score, @away_team, @away_team_score)
+</span><span class="marked1"><a name="line61"></a>61     @game_points_meter = GCharts::GoogleCharts.build_google_o_meter_chart(@game.points[0][&quot;content&quot;])
+</span><span class="marked0"><a name="line62"></a>62     @game_map = GCharts::GoogleCharts.build_map(@team_hash[@home_team_id],@team_hash[@away_team_id])
+</span><span class="inferred1"><a name="line63"></a>63   end
+</span><span class="inferred0"><a name="line64"></a>64 end
 </span></pre><hr/>
     <p>Generated using the <a href='http://eigenclass.org/hiki.rb?rcov'>rcov code coverage analysis tool for Ruby</a>
    version 0.8.1.2.</p>

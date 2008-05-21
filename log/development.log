@@ -1,0 +1,107 @@
+# Logfile created on Tue May 20 19:47:47 -0700 2008
+
+Processing SportsChartingController#index (for 68.204.225.49 at 2008-05-20 19:48:16) [GET]
+  Session ID: 0b3211685edd15b48986f06f93a6c466
+  Parameters: {"action"=>"index", "controller"=>"sports_charting"}
+  [4;36;1mSQL (0.001574)[0m   [0;1mSHOW client_min_messages[0m
+  [4;35;1mSQL (0.001006)[0m   [0mSET client_min_messages TO 'panic'[0m
+  [4;36;1mSQL (0.001082)[0m   [0;1mSHOW standard_conforming_strings[0m
+  [4;35;1mSQL (0.000869)[0m   [0mSET client_min_messages TO 'notice'[0m
+  [4;36;1mSQL (0.001386)[0m   [0;1mSELECT version()[0m
+Rendering sports_charting/index
+Completed in 0.00653 (153 reqs/sec) | Rendering: 0.00305 (46%) | DB: 0.00592 (90%) | 200 OK [http://fit-ng.heroku.com/]
+
+
+Processing SportsChartingController#teams (for 68.204.225.49 at 2008-05-20 19:48:18) [GET]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo%0ASGFzaHsABjoKQHVzZWR7AA%3D%3D--671bea3ca7d73946a4204a7a3643fc0c06630d08
+  Parameters: {"action"=>"teams", "controller"=>"sports_charting", "sport"=>"mlb"}
+Rendering sports_charting/teams
+Rendered aywt/teams/_team (0.00096)
+Rendered aywt/teams/_team (0.00087)
+Rendered aywt/teams/_team (0.00031)
+Rendered aywt/teams/_team (0.00029)
+Rendered aywt/teams/_team (0.00029)
+Rendered aywt/teams/_team (0.00029)
+Rendered aywt/teams/_team (0.00029)
+Rendered aywt/teams/_team (0.00029)
+Rendered aywt/teams/_team (0.00030)
+Rendered aywt/teams/_team (0.00029)
+Rendered aywt/teams/_team (0.00029)
+Rendered aywt/teams/_team (0.00029)
+Rendered aywt/teams/_team (0.00029)
+Rendered aywt/teams/_team (0.00029)
+Rendered aywt/teams/_team (0.00029)
+Rendered aywt/teams/_team (0.00030)
+Rendered aywt/teams/_team (0.00030)
+Rendered aywt/teams/_team (0.00029)
+Rendered aywt/teams/_team (0.00015)
+Rendered aywt/teams/_team (0.00029)
+Rendered aywt/teams/_team (0.00028)
+Rendered aywt/teams/_team (0.00029)
+Rendered aywt/teams/_team (0.00060)
+Rendered aywt/teams/_team (0.00029)
+Rendered aywt/teams/_team (0.00029)
+Rendered aywt/teams/_team (0.00030)
+Rendered aywt/teams/_team (0.00029)
+Rendered aywt/teams/_team (0.00029)
+Rendered aywt/teams/_team (0.00029)
+Rendered aywt/teams/_team (0.00029)
+Rendered aywt/teams/_team (0.00029)
+Rendered aywt/teams/_team (0.00036)
+Completed in 0.24305 (4 reqs/sec) | Rendering: 0.08533 (35%) | DB: 0.00000 (0%) | 200 OK [http://fit-ng.heroku.com/sports_charting/teams/mlb]
+
+
+Processing SportsChartingController#games (for 68.204.225.49 at 2008-05-20 19:48:21) [GET]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo%0ASGFzaHsABjoKQHVzZWR7AA%3D%3D--671bea3ca7d73946a4204a7a3643fc0c06630d08
+  Parameters: {"action"=>"games", "id"=>"13376", "controller"=>"sports_charting"}
+Rendering sports_charting/games
+Rendered aywt/games/_game (0.00279)
+Rendered aywt/games/_game (0.00133)
+Rendered aywt/games/_game (0.00125)
+Rendered aywt/games/_game (0.00124)
+Rendered aywt/games/_game (0.00131)
+Rendered aywt/games/_game (0.00160)
+Rendered aywt/games/_game (0.00134)
+Rendered aywt/games/_game (0.00128)
+Rendered aywt/games/_game (0.00124)
+Rendered aywt/games/_game (0.00128)
+Rendered aywt/games/_game (0.00126)
+Rendered aywt/games/_game (0.00129)
+Rendered aywt/games/_game (0.00129)
+Rendered aywt/games/_game (0.00125)
+Rendered aywt/games/_game (0.00124)
+Completed in 0.44282 (2 reqs/sec) | Rendering: 0.09577 (21%) | DB: 0.00000 (0%) | 200 OK [http://fit-ng.heroku.com/sports_charting/games/13376]
+
+
+Processing SportsChartingController#game (for 68.204.225.49 at 2008-05-20 19:48:22) [GET]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo%0ASGFzaHsABjoKQHVzZWR7AA%3D%3D--671bea3ca7d73946a4204a7a3643fc0c06630d08
+  Parameters: {"action"=>"game", "id"=>"79747", "controller"=>"sports_charting"}
+Rendering sports_charting/game
+Completed in 0.12130 (8 reqs/sec) | Rendering: 0.00328 (2%) | DB: 0.00000 (0%) | 200 OK [http://fit-ng.heroku.com/sports_charting/game/79747]
+
+
+Processing SportsChartingController#games (for 68.204.225.49 at 2008-05-20 19:48:36) [GET]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo%0ASGFzaHsABjoKQHVzZWR7AA%3D%3D--671bea3ca7d73946a4204a7a3643fc0c06630d08
+  Parameters: {"action"=>"games", "id"=>"13379", "controller"=>"sports_charting"}
+Rendering sports_charting/games
+Rendered aywt/games/_game (0.00163)
+Rendered aywt/games/_game (0.00134)
+Rendered aywt/games/_game (0.00128)
+Rendered aywt/games/_game (0.00129)
+Rendered aywt/games/_game (0.00132)
+Rendered aywt/games/_game (0.00129)
+Rendered aywt/games/_game (0.00130)
+Rendered aywt/games/_game (0.00128)
+Rendered aywt/games/_game (0.00154)
+Rendered aywt/games/_game (0.00130)
+Rendered aywt/games/_game (0.00127)
+Rendered aywt/games/_game (0.00126)
+Rendered aywt/games/_game (0.00126)
+Completed in 0.46622 (2 reqs/sec) | Rendering: 0.07702 (16%) | DB: 0.00000 (0%) | 200 OK [http://fit-ng.heroku.com/sports_charting/games/13379]
+
+
+Processing SportsChartingController#game (for 68.204.225.49 at 2008-05-20 19:48:39) [GET]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo%0ASGFzaHsABjoKQHVzZWR7AA%3D%3D--671bea3ca7d73946a4204a7a3643fc0c06630d08
+  Parameters: {"action"=>"game", "id"=>"75674", "controller"=>"sports_charting"}
+Rendering sports_charting/game
+Completed in 0.11160 (8 reqs/sec) | Rendering: 0.00124 (1%) | DB: 0.00000 (0%) | 200 OK [http://fit-ng.heroku.com/sports_charting/game/75674]

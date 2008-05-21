@@ -7,10 +7,12 @@ ActionController::Routing::Routes.draw do |map|
   
   map.connect 'sports_charting/games/:id', :controller => 'sports_charting', :action => 'games'
   
+  map.connect 'sports_charting/index', :controller => 'sports_charting', :action => 'index'
+  # Comment to restart mongrel instance...
   # Sample of regular route:
   #   map.connect 'products/:id', :controller => 'catalog', :action => 'view'
   # Keep in mind you can assign values other than :controller and :action
-
+  # Comment to reboot
   # Sample of named route:
   #   map.purchase 'products/:id/purchase', :controller => 'catalog', :action => 'purchase'
   # This route can be invoked with purchase_url(:id => product.id)

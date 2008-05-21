@@ -4,12 +4,11 @@ require 'rubygems'
 require 'xmlsimple'
 require 'net/http'
 
-class TeamUnitTest < Test::Unit::TestCase
-  # All tests are using ID's of a known game ID that is good as of
-  # May 19th, 2008
-  
+class TeamUnitTest < Test::Unit::TestCase  
   def test_get_teams_for_sport
-    assert true
+    @details = AYWT::Team.get_teams_for_sport("mlb")
+    assert_kind_of Array, @details
+    assert_kind_of AYWT::Team, @details.first
   end
   
 end
