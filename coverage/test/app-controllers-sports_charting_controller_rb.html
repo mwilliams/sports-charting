@@ -553,7 +553,7 @@ span.run100 {
 </style>
     </head>
   <body><h3>C0 code coverage information</h3>
-    <p>Generated on Wed May 21 23:06:07 -0400 2008 with <a href='http://eigenclass.org/hiki/rcov'>rcov 0.8.1.2</a>
+    <p>Generated on Thu May 22 19:37:21 -0400 2008 with <a href='http://eigenclass.org/hiki/rcov'>rcov 0.8.1.2</a>
       </p>
     <hr/>
     <pre><span class='marked0'>Code reported as executed by Ruby looks like this...
@@ -670,7 +670,7 @@ span.run100 {
 </span><span class="inferred0"><a name="line70"></a>70     # Build the Pie Chart URL using the function in the GChart library
 </span><span class="marked1"><a name="line71"></a>71     @game_score_pie_chart = GCharts::GoogleCharts.build_score_pie_chart(@home_team, @home_team_score, @away_team, @away_team_score)
 </span><span class="inferred0"><a name="line72"></a>72     # Build the Google-o-Meter using the function in the GChart library
-</span><span class="marked1"><a name="line73"></a>73     @game_points_meter = GCharts::GoogleCharts.build_google_o_meter_chart(@game.points[0][&quot;content&quot;])
+</span><span class="marked1"><a name="line73"></a>73     @game_points_meter = GCharts::GoogleCharts.build_google_o_meter_chart(@game.points[0][&quot;content&quot;], @game.points[0][&quot;level&quot;])
 </span><span class="inferred0"><a name="line74"></a>74     # Build the US Map with the states of each team involved using the hash that was built above
 </span><span class="marked1"><a name="line75"></a>75     @game_map = GCharts::GoogleCharts.build_map(@team_hash[@home_team_id],@team_hash[@away_team_id])
 </span><span class="inferred0"><a name="line76"></a>76   end

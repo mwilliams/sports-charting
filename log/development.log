@@ -10,3 +10,182 @@ Processing SportsChartingController#index (for 68.204.225.49 at 2008-05-22 16:24
   [4;36;1mSQL (0.001480)[0m   [0;1mSELECT version()[0m
 Rendering sports_charting/index
 Completed in 0.00643 (155 reqs/sec) | Rendering: 0.00303 (47%) | DB: 0.01615 (251%) | 200 OK [http://fit-ng.heroku.com/]
+  [4;36;1mSQL (0.000403)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (0.000000)[0m   [0mSQLite3::SQLException: table schema_info already exists: CREATE TABLE schema_info (version integer)[0m
+  [4;36;1mSQL (0.000000)[0m   [0;1mSQLite3::SQLException: table schema_info already exists: CREATE TABLE schema_info (version integer)[0m
+  [4;35;1mSQL (0.000246)[0m   [0mSELECT * FROM schema_info[0m
+  [4;36;1mSQL (0.000395)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.000385)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (0.000000)[0m   [0mSQLite3::SQLException: table schema_info already exists: CREATE TABLE schema_info (version integer)[0m
+  [4;36;1mSQL (0.000227)[0m   [0;1mSELECT * FROM schema_info[0m
+  [4;35;1mSQL (0.000230)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.000226)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (0.010336)[0m   [0mCREATE TABLE schema_info (version integer)[0m
+  [4;36;1mSQL (0.003348)[0m   [0;1mINSERT INTO schema_info (version) VALUES(0)[0m
+  [4;35;1mSQL (0.004419)[0m   [0mUPDATE schema_info SET version = 0[0m
+  [4;36;1mSQL (0.000394)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (0.000000)[0m   [0mSQLite3::SQLException: table schema_info already exists: CREATE TABLE schema_info (version integer)[0m
+  [4;36;1mSQL (0.000231)[0m   [0;1mSELECT * FROM schema_info[0m
+  [4;35;1mSQL (0.000232)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.000209)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (0.021893)[0m   [0mCREATE TABLE schema_info (version integer)[0m
+  [4;36;1mSQL (0.004664)[0m   [0;1mINSERT INTO schema_info (version) VALUES(0)[0m
+  [4;35;1mSQL (0.010247)[0m   [0mUPDATE schema_info SET version = 0[0m
+  [4;36;1mSQL (0.000386)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (0.000000)[0m   [0mSQLite3::SQLException: table schema_info already exists: CREATE TABLE schema_info (version integer)[0m
+  [4;36;1mSQL (0.000226)[0m   [0;1mSELECT * FROM schema_info[0m
+  [4;35;1mSQL (0.000232)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.000207)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (0.018710)[0m   [0mCREATE TABLE schema_info (version integer)[0m
+  [4;36;1mSQL (0.003411)[0m   [0;1mINSERT INTO schema_info (version) VALUES(0)[0m
+  [4;35;1mSQL (0.003648)[0m   [0mUPDATE schema_info SET version = 0[0m
+  [4;36;1mSQL (0.000390)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (0.000000)[0m   [0mSQLite3::SQLException: table schema_info already exists: CREATE TABLE schema_info (version integer)[0m
+  [4;36;1mSQL (0.000234)[0m   [0;1mSELECT * FROM schema_info[0m
+  [4;35;1mSQL (0.000231)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.000223)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (0.020114)[0m   [0mCREATE TABLE schema_info (version integer)[0m
+  [4;36;1mSQL (0.003768)[0m   [0;1mINSERT INTO schema_info (version) VALUES(0)[0m
+  [4;35;1mSQL (0.003892)[0m   [0mUPDATE schema_info SET version = 0[0m
+  [4;36;1mSQL (0.000392)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (0.000000)[0m   [0mSQLite3::SQLException: table schema_info already exists: CREATE TABLE schema_info (version integer)[0m
+  [4;36;1mSQL (0.000230)[0m   [0;1mSELECT * FROM schema_info[0m
+  [4;35;1mSQL (0.000230)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.000236)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (0.023505)[0m   [0mCREATE TABLE schema_info (version integer)[0m
+  [4;36;1mSQL (0.004603)[0m   [0;1mINSERT INTO schema_info (version) VALUES(0)[0m
+  [4;35;1mSQL (0.003101)[0m   [0mUPDATE schema_info SET version = 0[0m
+  [4;36;1mSQL (0.000390)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (0.000000)[0m   [0mSQLite3::SQLException: table schema_info already exists: CREATE TABLE schema_info (version integer)[0m
+  [4;36;1mSQL (0.000225)[0m   [0;1mSELECT * FROM schema_info[0m
+  [4;35;1mSQL (0.000232)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.000208)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (0.008510)[0m   [0mCREATE TABLE schema_info (version integer)[0m
+  [4;36;1mSQL (0.002807)[0m   [0;1mINSERT INTO schema_info (version) VALUES(0)[0m
+  [4;35;1mSQL (0.002923)[0m   [0mUPDATE schema_info SET version = 0[0m
+  [4;36;1mSQL (0.000390)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (0.000000)[0m   [0mSQLite3::SQLException: table schema_info already exists: CREATE TABLE schema_info (version integer)[0m
+  [4;36;1mSQL (0.000223)[0m   [0;1mSELECT * FROM schema_info[0m
+  [4;35;1mSQL (0.000232)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.000211)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (0.018786)[0m   [0mCREATE TABLE schema_info (version integer)[0m
+  [4;36;1mSQL (0.003415)[0m   [0;1mINSERT INTO schema_info (version) VALUES(0)[0m
+  [4;35;1mSQL (0.003807)[0m   [0mUPDATE schema_info SET version = 0[0m
+  [4;36;1mSQL (0.000394)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (0.000000)[0m   [0mSQLite3::SQLException: table schema_info already exists: CREATE TABLE schema_info (version integer)[0m
+  [4;36;1mSQL (0.000227)[0m   [0;1mSELECT * FROM schema_info[0m
+  [4;35;1mSQL (0.000232)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.000207)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (0.014342)[0m   [0mCREATE TABLE schema_info (version integer)[0m
+  [4;36;1mSQL (0.003562)[0m   [0;1mINSERT INTO schema_info (version) VALUES(0)[0m
+  [4;35;1mSQL (0.003416)[0m   [0mUPDATE schema_info SET version = 0[0m
+  [4;36;1mSQL (0.000391)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (0.000000)[0m   [0mSQLite3::SQLException: table schema_info already exists: CREATE TABLE schema_info (version integer)[0m
+  [4;36;1mSQL (0.000224)[0m   [0;1mSELECT * FROM schema_info[0m
+  [4;35;1mSQL (0.000233)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.000210)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (0.023511)[0m   [0mCREATE TABLE schema_info (version integer)[0m
+  [4;36;1mSQL (0.005147)[0m   [0;1mINSERT INTO schema_info (version) VALUES(0)[0m
+  [4;35;1mSQL (0.003142)[0m   [0mUPDATE schema_info SET version = 0[0m
+
+
+Processing SportsChartingController#index (for 127.0.0.1 at 2008-05-22 19:40:44) [GET]
+  Session ID: 2185529f871d84e7a4ff9d2a1d2eeb40
+  Parameters: {"action"=>"index", "controller"=>"sports_charting"}
+Rendering sports_charting/index
+Completed in 0.00824 (121 reqs/sec) | Rendering: 0.00385 (46%) | DB: 0.00000 (0%) | 200 OK [http://localhost/]
+
+
+Processing SportsChartingController#teams (for 127.0.0.1 at 2008-05-22 19:41:12) [GET]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo%0ASGFzaHsABjoKQHVzZWR7AA%3D%3D--671bea3ca7d73946a4204a7a3643fc0c06630d08
+  Parameters: {"action"=>"teams", "controller"=>"sports_charting", "sport"=>"mlb"}
+Rendering sports_charting/teams
+Rendered aywt/teams/_team (0.00089)
+Rendered aywt/teams/_team (0.00110)
+Rendered aywt/teams/_team (0.00050)
+Rendered aywt/teams/_team (0.00057)
+Rendered aywt/teams/_team (0.00057)
+Rendered aywt/teams/_team (0.00050)
+Rendered aywt/teams/_team (0.00049)
+Rendered aywt/teams/_team (0.00049)
+Rendered aywt/teams/_team (0.00050)
+Rendered aywt/teams/_team (0.00051)
+Rendered aywt/teams/_team (0.00048)
+Rendered aywt/teams/_team (0.00048)
+Rendered aywt/teams/_team (0.00050)
+Rendered aywt/teams/_team (0.00048)
+Rendered aywt/teams/_team (0.00056)
+Rendered aywt/teams/_team (0.00049)
+Rendered aywt/teams/_team (0.00049)
+Rendered aywt/teams/_team (0.00048)
+Rendered aywt/teams/_team (0.00023)
+Rendered aywt/teams/_team (0.00065)
+Rendered aywt/teams/_team (0.00049)
+Rendered aywt/teams/_team (0.00049)
+Rendered aywt/teams/_team (0.00049)
+Rendered aywt/teams/_team (0.00048)
+Rendered aywt/teams/_team (0.00049)
+Rendered aywt/teams/_team (0.00049)
+Rendered aywt/teams/_team (0.00048)
+Rendered aywt/teams/_team (0.00052)
+Rendered aywt/teams/_team (0.00048)
+Rendered aywt/teams/_team (0.00049)
+Rendered aywt/teams/_team (0.00049)
+Rendered aywt/teams/_team (0.00048)
+Completed in 0.23485 (4 reqs/sec) | Rendering: 0.02498 (10%) | DB: 0.00000 (0%) | 200 OK [http://localhost/sports_charting/teams/mlb]
+
+
+Processing SportsChartingController#games (for 127.0.0.1 at 2008-05-22 19:41:14) [GET]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo%0ASGFzaHsABjoKQHVzZWR7AA%3D%3D--671bea3ca7d73946a4204a7a3643fc0c06630d08
+  Parameters: {"action"=>"games", "id"=>"13376", "controller"=>"sports_charting"}
+Rendering sports_charting/games
+Rendered aywt/games/_game (0.00419)
+Rendered aywt/games/_game (0.00274)
+Rendered aywt/games/_game (0.00280)
+Rendered aywt/games/_game (0.00276)
+Rendered aywt/games/_game (0.00283)
+Rendered aywt/games/_game (0.00271)
+Rendered aywt/games/_game (0.00266)
+Rendered aywt/games/_game (0.00287)
+Rendered aywt/games/_game (0.00281)
+Rendered aywt/games/_game (0.00291)
+Rendered aywt/games/_game (0.00283)
+Rendered aywt/games/_game (0.00273)
+Rendered aywt/games/_game (0.00275)
+Rendered aywt/games/_game (0.00275)
+Completed in 0.40276 (2 reqs/sec) | Rendering: 0.05052 (12%) | DB: 0.00000 (0%) | 200 OK [http://localhost/sports_charting/games/13376]
+
+
+Processing SportsChartingController#game (for 127.0.0.1 at 2008-05-22 19:41:16) [GET]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo%0ASGFzaHsABjoKQHVzZWR7AA%3D%3D--671bea3ca7d73946a4204a7a3643fc0c06630d08
+  Parameters: {"action"=>"game", "id"=>"75686", "controller"=>"sports_charting"}

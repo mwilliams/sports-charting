@@ -1,5 +1,5 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html lang='en' xml:lang='en' xmlns='http://www.w3.org/1999/xhtml'><head><title>lib/team.rb - C0 code coverage information</title>
+<html lang='en' xml:lang='en' xmlns='http://www.w3.org/1999/xhtml'><head><title>lib/google_charts.rb - C0 code coverage information</title>
     <style type='text/css'>body { background-color: rgb(240, 240, 245); }</style>
     <style type='text/css'>span.cross-ref-title {
  font-size: 140%;
@@ -553,7 +553,7 @@ span.run100 {
 </style>
     </head>
   <body><h3>C0 code coverage information</h3>
-    <p>Generated on Thu May 22 19:37:22 -0400 2008 with <a href='http://eigenclass.org/hiki/rcov'>rcov 0.8.1.2</a>
+    <p>Generated on Thu May 22 19:37:51 -0400 2008 with <a href='http://eigenclass.org/hiki/rcov'>rcov 0.8.1.2</a>
       </p>
     <hr/>
     <pre><span class='marked0'>Code reported as executed by Ruby looks like this...
@@ -569,11 +569,11 @@ span.run100 {
       <td class='heading'>Code coverage</td>
       </tr>
     </thead>
-  <tbody><tr class='light'><td><a href='lib-team_rb.html'>lib/team.rb</a>
+  <tbody><tr class='light'><td><a href='lib-google_charts_rb.html'>lib/google_charts.rb</a>
         </td>
-      <td class='lines_total'><tt>28</tt>
+      <td class='lines_total'><tt>31</tt>
         </td>
-      <td class='lines_code'><tt>24</tt>
+      <td class='lines_code'><tt>13</tt>
         </td>
       <td><table cellspacing='0' cellpadding='0' align='right'><tr><td><tt class='coverage_total'>100.0%</tt>
               &nbsp;</td>
@@ -598,34 +598,37 @@ span.run100 {
       </tr>
     </tbody>
   </table>
-<pre><span class="marked0"><a name="line1"></a> 1 require 'base'
-</span><span class="inferred1"><a name="line2"></a> 2 
-</span><span class="marked0"><a name="line3"></a> 3 module AYWT
-</span><span class="marked1"><a name="line4"></a> 4   class Team &lt; Base
-</span><span class="marked0"><a name="line5"></a> 5     attr_accessor :id, :city, :team_name
-</span><span class="inferred1"><a name="line6"></a> 6     
-</span><span class="marked0"><a name="line7"></a> 7     def self.get_teams_for_sport(sport)
-</span><span class="marked1"><a name="line8"></a> 8       @teams_hash = AYWT::Base.get_teams_for_sport(sport)
-</span><span class="marked0"><a name="line9"></a> 9       build_teams_object_from_hash(@teams_hash)
-</span><span class="inferred1"><a name="line10"></a>10     end
-</span><span class="inferred0"><a name="line11"></a>11     
-</span><span class="marked1"><a name="line12"></a>12     private
-</span><span class="inferred0"><a name="line13"></a>13     
-</span><span class="marked1"><a name="line14"></a>14     def self.build_teams_object_from_hash(hash)
-</span><span class="marked0"><a name="line15"></a>15       @teams = []
-</span><span class="marked1"><a name="line16"></a>16       hash[&quot;teams&quot;].each do |teams|
-</span><span class="marked0"><a name="line17"></a>17         teams[&quot;team&quot;].each do |team|
-</span><span class="marked1"><a name="line18"></a>18           @team = AYWT::Team.new
-</span><span class="marked0"><a name="line19"></a>19           @team.id = team[&quot;id&quot;]
-</span><span class="marked1"><a name="line20"></a>20           @team.city = team[&quot;city&quot;]
-</span><span class="marked0"><a name="line21"></a>21           @team.team_name = team[&quot;name&quot;]
-</span><span class="marked1"><a name="line22"></a>22           @teams &lt;&lt; @team
-</span><span class="inferred0"><a name="line23"></a>23         end
-</span><span class="inferred1"><a name="line24"></a>24       end
-</span><span class="marked0"><a name="line25"></a>25       @teams
-</span><span class="inferred1"><a name="line26"></a>26     end
-</span><span class="inferred0"><a name="line27"></a>27   end
-</span><span class="inferred1"><a name="line28"></a>28 end
+<pre><span class="marked1"><a name="line1"></a> 1 module GCharts
+</span><span class="marked0"><a name="line2"></a> 2   class GoogleCharts
+</span><span class="inferred1"><a name="line3"></a> 3     # Builds a Google-o-Meter chart based on the overall score value for the game as defined by the users of the site
+</span><span class="inferred0"><a name="line4"></a> 4     # Parameters:
+</span><span class="inferred1"><a name="line5"></a> 5     # number - string or integer value between 0-100.  Example) 45 or &quot;45&quot;
+</span><span class="inferred0"><a name="line6"></a> 6     # Returns: A valid URL that renders a Google-o-Meter chart as a PNG image
+</span><span class="marked1"><a name="line7"></a> 7     def self.build_google_o_meter_chart(number, description)
+</span><span class="marked0"><a name="line8"></a> 8       &quot;http://chart.apis.google.com/chart?chs=225x125&amp;cht=gom&amp;chd=t:#{number}&amp;chl=#{description}&quot;
+</span><span class="marked1"><a name="line9"></a> 9     end
+</span><span class="inferred0"><a name="line10"></a>10     
+</span><span class="inferred1"><a name="line11"></a>11     # Builds a pie chart that displays the score of the game
+</span><span class="inferred0"><a name="line12"></a>12     # Parameters:
+</span><span class="inferred1"><a name="line13"></a>13     # home_team - string containing the home team name.  Example) Yankees
+</span><span class="inferred0"><a name="line14"></a>14     # home_team_score - string or integer with the home teams current score  Example) 3 or &quot;3&quot;
+</span><span class="inferred1"><a name="line15"></a>15     # away_team - string containing the away team name.  Example) Red Sox
+</span><span class="inferred0"><a name="line16"></a>16     # away_team_score - string or integer with the away teams current score.  Example) 1 or &quot;1&quot;
+</span><span class="inferred1"><a name="line17"></a>17     # Returns: A valid URL that renders a 3D Google Pie Chart as a PNG image
+</span><span class="marked0"><a name="line18"></a>18     def self.build_score_pie_chart(home_team, home_team_score, away_team, away_team_score)
+</span><span class="marked1"><a name="line19"></a>19       &quot;http://chart.apis.google.com/chart?cht=p3&amp;chd=t:#{home_team_score},#{away_team_score}&amp;chs=500x200&amp;chl=#{home_team}-#{home_team_score}|#{away_team}-#{away_team_score}&quot;
+</span><span class="marked0"><a name="line20"></a>20     end
+</span><span class="inferred1"><a name="line21"></a>21     
+</span><span class="inferred0"><a name="line22"></a>22     # Builds a Google Map chart with the two states of the teams participating in the current game
+</span><span class="inferred1"><a name="line23"></a>23     # Parameters:
+</span><span class="inferred0"><a name="line24"></a>24     # home_team - a string that contains the two character representation of their state.  Example) NY
+</span><span class="inferred1"><a name="line25"></a>25     # away_team - a string that contains the two character representation of their state.  Example) MA
+</span><span class="marked0"><a name="line26"></a>26     def self.build_map(home_team, away_team)
+</span><span class="marked1"><a name="line27"></a>27      &quot;http://chart.apis.google.com/chart?chs=350x200&amp;cht=t&amp;chtm=usa&amp;chco=CCCCCC,CC0033,006600&amp;chld=#{home_team}#{away_team}&amp;chd=s:f9&amp;chf=bg,s,ffffff&quot;
+</span><span class="marked0"><a name="line28"></a>28     end
+</span><span class="inferred1"><a name="line29"></a>29     
+</span><span class="inferred0"><a name="line30"></a>30   end
+</span><span class="inferred1"><a name="line31"></a>31 end
 </span></pre><hr/>
     <p>Generated using the <a href='http://eigenclass.org/hiki.rb?rcov'>rcov code coverage analysis tool for Ruby</a>
    version 0.8.1.2.</p>

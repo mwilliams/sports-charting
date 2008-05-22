@@ -1,5 +1,5 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html lang='en' xml:lang='en' xmlns='http://www.w3.org/1999/xhtml'><head><title>lib/team.rb - C0 code coverage information</title>
+<html lang='en' xml:lang='en' xmlns='http://www.w3.org/1999/xhtml'><head><title>lib/base.rb - C0 code coverage information</title>
     <style type='text/css'>body { background-color: rgb(240, 240, 245); }</style>
     <style type='text/css'>span.cross-ref-title {
  font-size: 140%;
@@ -553,7 +553,7 @@ span.run100 {
 </style>
     </head>
   <body><h3>C0 code coverage information</h3>
-    <p>Generated on Thu May 22 19:37:22 -0400 2008 with <a href='http://eigenclass.org/hiki/rcov'>rcov 0.8.1.2</a>
+    <p>Generated on Thu May 22 19:37:51 -0400 2008 with <a href='http://eigenclass.org/hiki/rcov'>rcov 0.8.1.2</a>
       </p>
     <hr/>
     <pre><span class='marked0'>Code reported as executed by Ruby looks like this...
@@ -569,11 +569,11 @@ span.run100 {
       <td class='heading'>Code coverage</td>
       </tr>
     </thead>
-  <tbody><tr class='light'><td><a href='lib-team_rb.html'>lib/team.rb</a>
+  <tbody><tr class='light'><td><a href='lib-base_rb.html'>lib/base.rb</a>
         </td>
-      <td class='lines_total'><tt>28</tt>
+      <td class='lines_total'><tt>47</tt>
         </td>
-      <td class='lines_code'><tt>24</tt>
+      <td class='lines_code'><tt>18</tt>
         </td>
       <td><table cellspacing='0' cellpadding='0' align='right'><tr><td><tt class='coverage_total'>100.0%</tt>
               &nbsp;</td>
@@ -598,34 +598,53 @@ span.run100 {
       </tr>
     </tbody>
   </table>
-<pre><span class="marked0"><a name="line1"></a> 1 require 'base'
-</span><span class="inferred1"><a name="line2"></a> 2 
-</span><span class="marked0"><a name="line3"></a> 3 module AYWT
-</span><span class="marked1"><a name="line4"></a> 4   class Team &lt; Base
-</span><span class="marked0"><a name="line5"></a> 5     attr_accessor :id, :city, :team_name
-</span><span class="inferred1"><a name="line6"></a> 6     
-</span><span class="marked0"><a name="line7"></a> 7     def self.get_teams_for_sport(sport)
-</span><span class="marked1"><a name="line8"></a> 8       @teams_hash = AYWT::Base.get_teams_for_sport(sport)
-</span><span class="marked0"><a name="line9"></a> 9       build_teams_object_from_hash(@teams_hash)
-</span><span class="inferred1"><a name="line10"></a>10     end
-</span><span class="inferred0"><a name="line11"></a>11     
-</span><span class="marked1"><a name="line12"></a>12     private
-</span><span class="inferred0"><a name="line13"></a>13     
-</span><span class="marked1"><a name="line14"></a>14     def self.build_teams_object_from_hash(hash)
-</span><span class="marked0"><a name="line15"></a>15       @teams = []
-</span><span class="marked1"><a name="line16"></a>16       hash[&quot;teams&quot;].each do |teams|
-</span><span class="marked0"><a name="line17"></a>17         teams[&quot;team&quot;].each do |team|
-</span><span class="marked1"><a name="line18"></a>18           @team = AYWT::Team.new
-</span><span class="marked0"><a name="line19"></a>19           @team.id = team[&quot;id&quot;]
-</span><span class="marked1"><a name="line20"></a>20           @team.city = team[&quot;city&quot;]
-</span><span class="marked0"><a name="line21"></a>21           @team.team_name = team[&quot;name&quot;]
-</span><span class="marked1"><a name="line22"></a>22           @teams &lt;&lt; @team
-</span><span class="inferred0"><a name="line23"></a>23         end
-</span><span class="inferred1"><a name="line24"></a>24       end
-</span><span class="marked0"><a name="line25"></a>25       @teams
-</span><span class="inferred1"><a name="line26"></a>26     end
-</span><span class="inferred0"><a name="line27"></a>27   end
-</span><span class="inferred1"><a name="line28"></a>28 end
+<pre><span class="marked1"><a name="line1"></a> 1 module AYWT
+</span><span class="marked0"><a name="line2"></a> 2   class Base
+</span><span class="inferred1"><a name="line3"></a> 3     
+</span><span class="inferred0"><a name="line4"></a> 4     # Main URL that every HTTP GET request is made from
+</span><span class="marked1"><a name="line5"></a> 5     AYWT_URL = 'http://areyouwatchingthis.com/api/'
+</span><span class="inferred0"><a name="line6"></a> 6  
+</span><span class="inferred1"><a name="line7"></a> 7     # Crafts the endpoint to be added to AYWT_URL and calls the get_data function with that endpoint as the parameter.
+</span><span class="inferred0"><a name="line8"></a> 8     # This function is used to retrieve the list of teams for a specific sport
+</span><span class="inferred1"><a name="line9"></a> 9     # Parameters:
+</span><span class="inferred0"><a name="line10"></a>10     # sport - A string containing the sport acroynym.  Example) &quot;nba&quot; or &quot;nfl&quot;
+</span><span class="inferred1"><a name="line11"></a>11     # Returns: A Hash containing a list of teams for the specific sport
+</span><span class="marked0"><a name="line12"></a>12     def self.get_teams_for_sport(sport)
+</span><span class="marked1"><a name="line13"></a>13       get_data(&quot;teams?sport=#{sport}&quot;)
+</span><span class="marked0"><a name="line14"></a>14     end   
+</span><span class="inferred1"><a name="line15"></a>15     
+</span><span class="inferred0"><a name="line16"></a>16     # Crafts the endpoint to be added to AYWT_URL and calls the get_data function with that endpoint as the parameter.
+</span><span class="inferred1"><a name="line17"></a>17     # This function is used to retrieve the list of games for a specific team
+</span><span class="inferred0"><a name="line18"></a>18     # Parameters:
+</span><span class="inferred1"><a name="line19"></a>19     # team - An integer containing the ID of a specific team.  Example) 7541
+</span><span class="inferred0"><a name="line20"></a>20     # Returns: A Hash containing a list of games for the associated team
+</span><span class="marked1"><a name="line21"></a>21     def self.get_games_for_team(team)
+</span><span class="marked0"><a name="line22"></a>22       get_data(&quot;games?teamID=#{team}&quot;)
+</span><span class="marked1"><a name="line23"></a>23     end
+</span><span class="inferred0"><a name="line24"></a>24     
+</span><span class="inferred1"><a name="line25"></a>25     # Crafts the endpoint to be added to AYWT_URL and calls the get_data function with that endpoint as the parameter.
+</span><span class="inferred0"><a name="line26"></a>26     # This function is used to retrieve the details of a specific game
+</span><span class="inferred1"><a name="line27"></a>27     # Parameters:
+</span><span class="inferred0"><a name="line28"></a>28     # game_id - An integer containing the ID of a specific game.  Example) 6214
+</span><span class="inferred1"><a name="line29"></a>29     # Returns: A Hash containing a list of teams for the specific sport
+</span><span class="marked0"><a name="line30"></a>30     def self.get_game_details(game_id)
+</span><span class="marked1"><a name="line31"></a>31       AYWT::Base.get_data(&quot;games?gameID=#{game_id}&quot;)
+</span><span class="marked0"><a name="line32"></a>32     end   
+</span><span class="inferred1"><a name="line33"></a>33     
+</span><span class="marked0"><a name="line34"></a>34     private
+</span><span class="inferred1"><a name="line35"></a>35     
+</span><span class="inferred0"><a name="line36"></a>36     # Builds the requested URL, makes an HTTP GET request against that URL and uses the XML Simple library to turn the 
+</span><span class="inferred1"><a name="line37"></a>37     # returned XML into a Ruby Hash
+</span><span class="inferred0"><a name="line38"></a>38     # Parameters:
+</span><span class="inferred1"><a name="line39"></a>39     # endpoint - The specific API call 
+</span><span class="inferred0"><a name="line40"></a>40     # Returns: A Hash containing the data from the requesting method
+</span><span class="marked1"><a name="line41"></a>41     def self.get_data(endpoint)
+</span><span class="marked0"><a name="line42"></a>42       XmlSimple.xml_in(Net::HTTP.get_response(URI.parse([AYWT_URL,endpoint].join)).body)
+</span><span class="marked1"><a name="line43"></a>43     end
+</span><span class="inferred0"><a name="line44"></a>44     
+</span><span class="inferred1"><a name="line45"></a>45   end
+</span><span class="inferred0"><a name="line46"></a>46 end
+</span><span class="inferred1"><a name="line47"></a>47 
 </span></pre><hr/>
     <p>Generated using the <a href='http://eigenclass.org/hiki.rb?rcov'>rcov code coverage analysis tool for Ruby</a>
    version 0.8.1.2.</p>

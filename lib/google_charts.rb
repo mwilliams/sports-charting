@@ -24,7 +24,6 @@ module GCharts
     # home_team - a string that contains the two character representation of their state.  Example) NY
     # away_team - a string that contains the two character representation of their state.  Example) MA
     def self.build_map(home_team, away_team)
-      # "http://chart.apis.google.com/chart?chs=350x200&cht=t&chtm=usa&chco=ffffff,ffffff,385E0F&chld=#{home_team}#{away_team}&chd=s:f9&chf=bg,s,eaf7fe"
      "http://chart.apis.google.com/chart?chs=350x200&cht=t&chtm=usa&chco=CCCCCC,CC0033,006600&chld=#{home_team}#{away_team}&chd=s:f9&chf=bg,s,ffffff"
     end
     
