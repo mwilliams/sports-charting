@@ -1,156 +1,116 @@
-# Logfile created on Wed May 21 10:16:40 -0700 2008
+# Logfile created on Thu May 22 04:58:08 -0700 2008
 
-Processing SportsChartingController#game (for 209.217.206.211 at 2008-05-21 10:16:41) [GET]
-  Session ID: e603ec1dc9062298bb485307271089a2
-  Parameters: {"action"=>"game", "id"=>"79746", "controller"=>"sports_charting"}
-  [4;36;1mSQL (0.049027)[0m   [0;1mSHOW client_min_messages[0m
-  [4;35;1mSQL (0.001109)[0m   [0mSET client_min_messages TO 'panic'[0m
-  [4;36;1mSQL (0.000897)[0m   [0;1mSHOW standard_conforming_strings[0m
-  [4;35;1mSQL (0.000847)[0m   [0mSET client_min_messages TO 'notice'[0m
-  [4;36;1mSQL (0.003449)[0m   [0;1mSELECT version()[0m
-Rendering sports_charting/game
-Completed in 0.19628 (5 reqs/sec) | Rendering: 0.00372 (1%) | DB: 0.05533 (28%) | 200 OK [http://fit-ng.heroku.com/sports_charting/game/79746]
-
-
-Processing SportsChartingController#index (for 209.217.206.211 at 2008-05-21 10:23:18) [GET]
-  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo%0ASGFzaHsABjoKQHVzZWR7AA%3D%3D--671bea3ca7d73946a4204a7a3643fc0c06630d08
+Processing SportsChartingController#index (for 132.228.195.207 at 2008-05-22 04:58:08) [GET]
+  Session ID: b62245b0d9efe9d83463127c02c843eb
   Parameters: {"action"=>"index", "controller"=>"sports_charting"}
+  [4;36;1mSQL (0.001296)[0m   [0;1mSHOW client_min_messages[0m
+  [4;35;1mSQL (0.000908)[0m   [0mSET client_min_messages TO 'panic'[0m
+  [4;36;1mSQL (0.000858)[0m   [0;1mSHOW standard_conforming_strings[0m
+  [4;35;1mSQL (0.000862)[0m   [0mSET client_min_messages TO 'notice'[0m
+  [4;36;1mSQL (0.002955)[0m   [0;1mSELECT version()[0m
 Rendering sports_charting/index
-Completed in 0.00661 (151 reqs/sec) | Rendering: 0.00295 (44%) | DB: 0.00000 (0%) | 200 OK [http://fit-ng.heroku.com/sports_charting/]
+Completed in 0.00680 (146 reqs/sec) | Rendering: 0.00309 (45%) | DB: 0.00688 (101%) | 200 OK [http://fit-ng.heroku.com/]
 
 
-Processing SportsChartingController#teams (for 209.217.206.211 at 2008-05-21 10:23:21) [GET]
+Processing SportsChartingController#teams (for 132.228.195.207 at 2008-05-22 04:58:11) [GET]
   Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo%0ASGFzaHsABjoKQHVzZWR7AA%3D%3D--671bea3ca7d73946a4204a7a3643fc0c06630d08
-  Parameters: {"action"=>"teams", "controller"=>"sports_charting", "sport"=>"nfl"}
+  Parameters: {"action"=>"teams", "controller"=>"sports_charting", "sport"=>"nba"}
 Rendering sports_charting/teams
-Rendered aywt/teams/_team (0.00094)
-Rendered aywt/teams/_team (0.00082)
-Rendered aywt/teams/_team (0.00032)
+Rendered aywt/teams/_team (0.00198)
+Rendered aywt/teams/_team (0.00019)
 Rendered aywt/teams/_team (0.00030)
 Rendered aywt/teams/_team (0.00029)
 Rendered aywt/teams/_team (0.00029)
-Rendered aywt/teams/_team (0.00029)
-Rendered aywt/teams/_team (0.00030)
-Rendered aywt/teams/_team (0.00030)
-Rendered aywt/teams/_team (0.00030)
-Rendered aywt/teams/_team (0.00030)
-Rendered aywt/teams/_team (0.00030)
-Rendered aywt/teams/_team (0.00030)
-Rendered aywt/teams/_team (0.00029)
-Rendered aywt/teams/_team (0.00030)
-Rendered aywt/teams/_team (0.00029)
-Rendered aywt/teams/_team (0.00029)
-Rendered aywt/teams/_team (0.00029)
-Rendered aywt/teams/_team (0.00029)
-Rendered aywt/teams/_team (0.00029)
-Rendered aywt/teams/_team (0.00030)
-Rendered aywt/teams/_team (0.00030)
 Rendered aywt/teams/_team (0.00029)
 Rendered aywt/teams/_team (0.00015)
 Rendered aywt/teams/_team (0.00029)
-Rendered aywt/teams/_team (0.00030)
+Rendered aywt/teams/_team (0.00029)
+Rendered aywt/teams/_team (0.00029)
+Rendered aywt/teams/_team (0.00015)
+Rendered aywt/teams/_team (0.00015)
+Rendered aywt/teams/_team (0.00015)
+Rendered aywt/teams/_team (0.00042)
 Rendered aywt/teams/_team (0.00030)
 Rendered aywt/teams/_team (0.00029)
 Rendered aywt/teams/_team (0.00029)
 Rendered aywt/teams/_team (0.00029)
-Rendered aywt/teams/_team (0.00029)
-Rendered aywt/teams/_team (0.00029)
-Rendered aywt/teams/_team (0.00029)
-Rendered aywt/teams/_team (0.00029)
-Completed in 0.17639 (5 reqs/sec) | Rendering: 0.07807 (44%) | DB: 0.00000 (0%) | 200 OK [http://fit-ng.heroku.com/sports_charting/teams/nfl]
-
-
-Processing SportsChartingController#games (for 209.217.206.211 at 2008-05-21 10:23:24) [GET]
-  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo%0ASGFzaHsABjoKQHVzZWR7AA%3D%3D--671bea3ca7d73946a4204a7a3643fc0c06630d08
-  Parameters: {"action"=>"games", "id"=>"13317", "controller"=>"sports_charting"}
-Rendering sports_charting/games
-Completed in 0.10705 (9 reqs/sec) | Rendering: 0.00173 (1%) | DB: 0.00000 (0%) | 200 OK [http://fit-ng.heroku.com/sports_charting/games/13317]
-
-
-Processing SportsChartingController#teams (for 209.217.206.211 at 2008-05-21 10:23:28) [GET]
-  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo%0ASGFzaHsABjoKQHVzZWR7AA%3D%3D--671bea3ca7d73946a4204a7a3643fc0c06630d08
-  Parameters: {"action"=>"teams", "controller"=>"sports_charting", "sport"=>"mlb"}
-Rendering sports_charting/teams
-Rendered aywt/teams/_team (0.00018)
-Rendered aywt/teams/_team (0.00038)
-Rendered aywt/teams/_team (0.00030)
-Rendered aywt/teams/_team (0.00030)
-Rendered aywt/teams/_team (0.00030)
-Rendered aywt/teams/_team (0.00029)
+Rendered aywt/teams/_team (0.00022)
+Rendered aywt/teams/_team (0.00015)
+Rendered aywt/teams/_team (0.00015)
 Rendered aywt/teams/_team (0.00030)
 Rendered aywt/teams/_team (0.00030)
 Rendered aywt/teams/_team (0.00029)
 Rendered aywt/teams/_team (0.00029)
-Rendered aywt/teams/_team (0.00030)
-Rendered aywt/teams/_team (0.00030)
-Rendered aywt/teams/_team (0.00030)
-Rendered aywt/teams/_team (0.00030)
-Rendered aywt/teams/_team (0.00030)
-Rendered aywt/teams/_team (0.00030)
-Rendered aywt/teams/_team (0.00029)
-Rendered aywt/teams/_team (0.00030)
 Rendered aywt/teams/_team (0.00015)
 Rendered aywt/teams/_team (0.00030)
 Rendered aywt/teams/_team (0.00029)
+Rendered aywt/teams/_team (0.00029)
+Rendered aywt/teams/_team (0.00029)
+Rendered aywt/teams/_team (0.00015)
+Rendered aywt/teams/_team (0.00029)
+Rendered aywt/teams/_team (0.00029)
+Rendered aywt/teams/_team (0.00029)
+Rendered aywt/teams/_team (0.00015)
+Rendered aywt/teams/_team (0.00029)
+Rendered aywt/teams/_team (0.00029)
+Rendered aywt/teams/_team (0.00029)
+Rendered aywt/teams/_team (0.00015)
+Rendered aywt/teams/_team (0.00029)
+Rendered aywt/teams/_team (0.00015)
+Rendered aywt/teams/_team (0.00031)
+Rendered aywt/teams/_team (0.00015)
 Rendered aywt/teams/_team (0.00030)
-Rendered aywt/teams/_team (0.00029)
-Rendered aywt/teams/_team (0.00029)
-Rendered aywt/teams/_team (0.00029)
-Rendered aywt/teams/_team (0.00029)
-Rendered aywt/teams/_team (0.00029)
-Rendered aywt/teams/_team (0.00029)
-Rendered aywt/teams/_team (0.00029)
-Rendered aywt/teams/_team (0.00067)
-Rendered aywt/teams/_team (0.00030)
-Rendered aywt/teams/_team (0.00030)
-Completed in 0.14774 (6 reqs/sec) | Rendering: 0.01516 (10%) | DB: 0.00000 (0%) | 200 OK [http://fit-ng.heroku.com/sports_charting/teams/mlb]
+Rendered aywt/teams/_team (0.00016)
+Rendered aywt/teams/_team (0.00016)
+Completed in 0.27315 (3 reqs/sec) | Rendering: 0.09281 (33%) | DB: 0.00000 (0%) | 200 OK [http://fit-ng.heroku.com/sports_charting/teams/nba]
 
 
-Processing SportsChartingController#games (for 209.217.206.211 at 2008-05-21 10:23:30) [GET]
+Processing SportsChartingController#games (for 132.228.195.207 at 2008-05-22 04:58:13) [GET]
   Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo%0ASGFzaHsABjoKQHVzZWR7AA%3D%3D--671bea3ca7d73946a4204a7a3643fc0c06630d08
-  Parameters: {"action"=>"games", "id"=>"13376", "controller"=>"sports_charting"}
+  Parameters: {"action"=>"games", "id"=>"10189", "controller"=>"sports_charting"}
 Rendering sports_charting/games
-Rendered aywt/games/_game (0.00301)
-Rendered aywt/games/_game (0.00135)
-Rendered aywt/games/_game (0.00126)
-Rendered aywt/games/_game (0.00132)
-Rendered aywt/games/_game (0.00148)
-Rendered aywt/games/_game (0.00131)
-Rendered aywt/games/_game (0.00130)
+Rendered aywt/games/_game (0.00264)
 Rendered aywt/games/_game (0.00128)
-Rendered aywt/games/_game (0.00130)
-Rendered aywt/games/_game (0.00128)
-Rendered aywt/games/_game (0.00165)
-Rendered aywt/games/_game (0.00134)
-Rendered aywt/games/_game (0.00127)
-Rendered aywt/games/_game (0.00127)
-Rendered aywt/games/_game (0.00125)
-Completed in 0.44065 (2 reqs/sec) | Rendering: 0.03574 (8%) | DB: 0.00000 (0%) | 200 OK [http://fit-ng.heroku.com/sports_charting/games/13376]
+Rendered aywt/games/_game (0.11118)
+Completed in 0.20474 (4 reqs/sec) | Rendering: 0.11934 (58%) | DB: 0.00000 (0%) | 200 OK [http://fit-ng.heroku.com/sports_charting/games/10189]
 
 
-Processing SportsChartingController#game (for 209.217.206.211 at 2008-05-21 10:23:32) [GET]
+Processing SportsChartingController#game (for 132.228.195.207 at 2008-05-22 04:58:15) [GET]
   Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo%0ASGFzaHsABjoKQHVzZWR7AA%3D%3D--671bea3ca7d73946a4204a7a3643fc0c06630d08
-  Parameters: {"action"=>"game", "id"=>"75707", "controller"=>"sports_charting"}
+  Parameters: {"action"=>"game", "id"=>"79733", "controller"=>"sports_charting"}
 Rendering sports_charting/game
-Completed in 0.10820 (9 reqs/sec) | Rendering: 0.00113 (1%) | DB: 0.00000 (0%) | 200 OK [http://fit-ng.heroku.com/sports_charting/game/75707]
+Completed in 0.07859 (12 reqs/sec) | Rendering: 0.00375 (4%) | DB: 0.00000 (0%) | 200 OK [http://fit-ng.heroku.com/sports_charting/game/79733]
 
 
-Processing SportsChartingController#game (for 209.217.206.211 at 2008-05-21 10:23:38) [GET]
+Processing SportsChartingController#game (for 132.228.195.207 at 2008-05-22 05:01:14) [GET]
   Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo%0ASGFzaHsABjoKQHVzZWR7AA%3D%3D--671bea3ca7d73946a4204a7a3643fc0c06630d08
-  Parameters: {"action"=>"game", "id"=>"79747", "controller"=>"sports_charting"}
-Rendering sports_charting/game
-Completed in 0.09808 (10 reqs/sec) | Rendering: 0.00121 (1%) | DB: 0.00000 (0%) | 200 OK [http://fit-ng.heroku.com/sports_charting/game/79747]
+  Parameters: {"action"=>"game", "id"=>"79733", "controller"=>"sports_charting"}
 
 
-Processing ApplicationController#index (for 132.228.195.206 at 2008-05-21 11:00:39) [GET]
-  Session ID: a85257afa09f2cd809579c98b16fa657
-  Parameters: {}
-
-
-ActionController::RoutingError (No route matches "/coverage" with {:method=>:get}):
-    /usr/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/routing.rb:1441:in `recognize_path'
-    /usr/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/routing.rb:1424:in `recognize'
-    /usr/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/dispatcher.rb:170:in `handle_request'
+ArgumentError (wrong number of arguments (2 for 1)):
+    /app/controllers/sports_charting_controller.rb:73:in `build_google_o_meter_chart'
+    /app/controllers/sports_charting_controller.rb:73:in `game'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/base.rb:1158:in `send'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/base.rb:1158:in `perform_action_without_filters'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/filters.rb:697:in `call_filters'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/filters.rb:689:in `perform_action_without_benchmark'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue_without_timeout'
+    /usr/lib/ruby/1.8/benchmark.rb:293:in `measure'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue_without_timeout'
+    /home/userapps_plugins/request_timeout/lib/request_timeout.rb:7:in `perform_action_without_rescue'
+    /usr/lib/ruby/1.8/timeout.rb:56:in `timeout'
+    /home/userapps_plugins/request_timeout/lib/request_timeout.rb:6:in `perform_action_without_rescue'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/rescue.rb:199:in `perform_action_without_caching'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/caching.rb:678:in `perform_action'
+    /usr/lib/ruby/gems/1.8/gems/activerecord-2.0.2/lib/active_record/connection_adapters/abstract/query_cache.rb:33:in `cache'
+    /usr/lib/ruby/gems/1.8/gems/activerecord-2.0.2/lib/active_record/query_cache.rb:8:in `cache'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/caching.rb:677:in `perform_action'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/base.rb:524:in `send'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/base.rb:524:in `process_without_filters'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/filters.rb:685:in `process_without_session_management_support'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/session_management.rb:123:in `process'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/base.rb:388:in `process'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/dispatcher.rb:171:in `handle_request'
     /usr/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/dispatcher.rb:115:in `dispatch'
     /usr/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/dispatcher.rb:126:in `dispatch_cgi'
     /usr/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/dispatcher.rb:9:in `dispatch'
@@ -176,125 +136,118 @@ ActionController::RoutingError (No route matches "/coverage" with {:method=>:get
     /usr/bin/mongrel_rails:19:in `load'
     /usr/bin/mongrel_rails:19
 
-HerokuToolbar Exception: You have a nil object when you didn't expect it!
-The error occurred while evaluating nil.logged_in?
-/home/userapps_plugins/heroku_app/lib/heroku_app.rb:5:in `toolbar_for?'
-/home/userapps_plugins/heroku_toolbar/lib/template_marker.rb:30:in `heroku_should_insert_markers'
-/home/userapps_plugins/heroku_toolbar/lib/template_marker.rb:38:in `heroku_insert_markers'
-/home/userapps_plugins/heroku_toolbar/lib/template_marker.rb:7:in `create_template_source'
-/usr/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_view/base.rb:597:in `compile_template'
-/usr/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_view/base.rb:630:in `compile_and_render_template'
-/usr/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_view/base.rb:365:in `render_template'
-/usr/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_view/base.rb:316:in `render_file'
-/usr/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/rescue.rb:179:in `rescue_action_locally'
-/usr/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/rescue.rb:123:in `rescue_action_without_heroku_filter'
-/home/userapps_plugins/heroku_toolbar/lib/backtracer.rb:12:in `rescue_action'
-/usr/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/base.rb:524:in `send'
-/usr/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/base.rb:524:in `process_without_filters'
-/usr/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/filters.rb:685:in `process_without_session_management_support'
-/usr/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/session_management.rb:123:in `process'
-/usr/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/rescue.rb:55:in `process_with_exception'
-/usr/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/dispatcher.rb:188:in `failsafe_rescue'
-/usr/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/dispatcher.rb:49:in `failsafe_response'
-/usr/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/dispatcher.rb:186:in `failsafe_rescue'
-/usr/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/dispatcher.rb:117:in `dispatch'
-/usr/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/dispatcher.rb:126:in `dispatch_cgi'
-/usr/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/dispatcher.rb:9:in `dispatch'
-/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.4/bin/../lib/mongrel/rails.rb:76:in `process'
-/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.4/bin/../lib/mongrel/rails.rb:74:in `synchronize'
-/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.4/bin/../lib/mongrel/rails.rb:74:in `process'
-/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.4/bin/../lib/mongrel.rb:159:in `process_client'
-/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.4/bin/../lib/mongrel.rb:158:in `each'
-/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.4/bin/../lib/mongrel.rb:158:in `process_client'
-/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.4/bin/../lib/mongrel.rb:285:in `run'
-/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.4/bin/../lib/mongrel.rb:285:in `initialize'
-/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.4/bin/../lib/mongrel.rb:285:in `new'
-/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.4/bin/../lib/mongrel.rb:285:in `run'
-/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.4/bin/../lib/mongrel.rb:268:in `initialize'
-/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.4/bin/../lib/mongrel.rb:268:in `new'
-/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.4/bin/../lib/mongrel.rb:268:in `run'
-/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.4/bin/../lib/mongrel/configurator.rb:282:in `run'
-/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.4/bin/../lib/mongrel/configurator.rb:281:in `each'
-/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.4/bin/../lib/mongrel/configurator.rb:281:in `run'
-/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.4/bin/mongrel_rails:128:in `run'
-/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.4/bin/../lib/mongrel/command.rb:212:in `run'
-/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.4/bin/mongrel_rails:281
-/usr/bin/mongrel_rails:19:in `load'
-/usr/bin/mongrel_rails:19
-Rendering /usr/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/templates/rescues/layout.erb (not_found)
-HerokuToolbar Exception: You have a nil object when you didn't expect it!
-The error occurred while evaluating nil.logged_in?
-/home/userapps_plugins/heroku_app/lib/heroku_app.rb:5:in `toolbar_for?'
-/home/userapps_plugins/heroku_toolbar/lib/template_marker.rb:30:in `heroku_should_insert_markers'
-/home/userapps_plugins/heroku_toolbar/lib/template_marker.rb:38:in `heroku_insert_markers'
-/home/userapps_plugins/heroku_toolbar/lib/template_marker.rb:7:in `create_template_source'
-/usr/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_view/base.rb:597:in `compile_template'
-/usr/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_view/base.rb:630:in `compile_and_render_template'
-/usr/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_view/base.rb:365:in `render_template'
-/usr/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_view/base.rb:316:in `render_file'
-/usr/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/base.rb:1100:in `render_for_file'
-/usr/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/rescue.rb:182:in `rescue_action_locally'
-/usr/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/rescue.rb:123:in `rescue_action_without_heroku_filter'
-/home/userapps_plugins/heroku_toolbar/lib/backtracer.rb:12:in `rescue_action'
-/usr/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/base.rb:524:in `send'
-/usr/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/base.rb:524:in `process_without_filters'
-/usr/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/filters.rb:685:in `process_without_session_management_support'
-/usr/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/session_management.rb:123:in `process'
-/usr/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/rescue.rb:55:in `process_with_exception'
-/usr/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/dispatcher.rb:188:in `failsafe_rescue'
-/usr/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/dispatcher.rb:49:in `failsafe_response'
-/usr/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/dispatcher.rb:186:in `failsafe_rescue'
-/usr/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/dispatcher.rb:117:in `dispatch'
-/usr/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/dispatcher.rb:126:in `dispatch_cgi'
-/usr/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/dispatcher.rb:9:in `dispatch'
-/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.4/bin/../lib/mongrel/rails.rb:76:in `process'
-/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.4/bin/../lib/mongrel/rails.rb:74:in `synchronize'
-/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.4/bin/../lib/mongrel/rails.rb:74:in `process'
-/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.4/bin/../lib/mongrel.rb:159:in `process_client'
-/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.4/bin/../lib/mongrel.rb:158:in `each'
-/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.4/bin/../lib/mongrel.rb:158:in `process_client'
-/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.4/bin/../lib/mongrel.rb:285:in `run'
-/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.4/bin/../lib/mongrel.rb:285:in `initialize'
-/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.4/bin/../lib/mongrel.rb:285:in `new'
-/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.4/bin/../lib/mongrel.rb:285:in `run'
-/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.4/bin/../lib/mongrel.rb:268:in `initialize'
-/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.4/bin/../lib/mongrel.rb:268:in `new'
-/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.4/bin/../lib/mongrel.rb:268:in `run'
-/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.4/bin/../lib/mongrel/configurator.rb:282:in `run'
-/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.4/bin/../lib/mongrel/configurator.rb:281:in `each'
-/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.4/bin/../lib/mongrel/configurator.rb:281:in `run'
-/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.4/bin/mongrel_rails:128:in `run'
-/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.4/bin/../lib/mongrel/command.rb:212:in `run'
-/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.4/bin/mongrel_rails:281
-/usr/bin/mongrel_rails:19:in `load'
-/usr/bin/mongrel_rails:19
-  [4;36;1mSQL (0.000386)[0m   [0;1mselect sqlite_version(*)[0m
-  [4;35;1mSQL (0.000000)[0m   [0mSQLite3::SQLException: table schema_info already exists: CREATE TABLE schema_info (version integer)[0m
-  [4;36;1mSQL (0.000000)[0m   [0;1mSQLite3::SQLException: table schema_info already exists: CREATE TABLE schema_info (version integer)[0m
-  [4;35;1mSQL (0.000223)[0m   [0mSELECT * FROM schema_info[0m
-  [4;36;1mSQL (0.000233)[0m   [0;1m SELECT name
- FROM sqlite_master
- WHERE type = 'table' AND NOT name = 'sqlite_sequence'
-[0m
-  [4;36;1mSQL (0.000408)[0m   [0;1mselect sqlite_version(*)[0m
-  [4;35;1mSQL (0.000000)[0m   [0mSQLite3::SQLException: table schema_info already exists: CREATE TABLE schema_info (version integer)[0m
-  [4;36;1mSQL (0.000236)[0m   [0;1mSELECT * FROM schema_info[0m
-  [4;35;1mSQL (0.000240)[0m   [0m SELECT name
- FROM sqlite_master
- WHERE type = 'table' AND NOT name = 'sqlite_sequence'
-[0m
-  [4;36;1mSQL (0.000247)[0m   [0;1mselect sqlite_version(*)[0m
-  [4;35;1mSQL (0.482855)[0m   [0mCREATE TABLE schema_info (version integer)[0m
-  [4;36;1mSQL (0.165196)[0m   [0;1mINSERT INTO schema_info (version) VALUES(0)[0m
-  [4;35;1mSQL (0.010917)[0m   [0mUPDATE schema_info SET version = 0[0m
-  [4;36;1mSQL (0.000401)[0m   [0;1mselect sqlite_version(*)[0m
-  [4;35;1mSQL (0.000000)[0m   [0mSQLite3::SQLException: table schema_info already exists: CREATE TABLE schema_info (version integer)[0m
-  [4;36;1mSQL (0.000221)[0m   [0;1mSELECT * FROM schema_info[0m
-  [4;35;1mSQL (0.000233)[0m   [0m SELECT name
- FROM sqlite_master
- WHERE type = 'table' AND NOT name = 'sqlite_sequence'
-[0m
-  [4;36;1mSQL (0.000210)[0m   [0;1mselect sqlite_version(*)[0m
-  [4;35;1mSQL (0.008570)[0m   [0mCREATE TABLE schema_info (version integer)[0m
-  [4;36;1mSQL (0.003377)[0m   [0;1mINSERT INTO schema_info (version) VALUES(0)[0m
-  [4;35;1mSQL (0.003161)[0m   [0mUPDATE schema_info SET version = 0[0m
+Rendering /usr/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/templates/rescues/layout.erb (internal_server_error)
+
+
+Processing SportsChartingController#game (for 132.228.195.207 at 2008-05-22 05:01:19) [GET]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo%0ASGFzaHsABjoKQHVzZWR7AA%3D%3D--671bea3ca7d73946a4204a7a3643fc0c06630d08
+  Parameters: {"action"=>"game", "id"=>"79733", "controller"=>"sports_charting"}
+
+
+ArgumentError (wrong number of arguments (2 for 1)):
+    /app/controllers/sports_charting_controller.rb:73:in `build_google_o_meter_chart'
+    /app/controllers/sports_charting_controller.rb:73:in `game'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/base.rb:1158:in `send'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/base.rb:1158:in `perform_action_without_filters'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/filters.rb:697:in `call_filters'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/filters.rb:689:in `perform_action_without_benchmark'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue_without_timeout'
+    /usr/lib/ruby/1.8/benchmark.rb:293:in `measure'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue_without_timeout'
+    /home/userapps_plugins/request_timeout/lib/request_timeout.rb:7:in `perform_action_without_rescue'
+    /usr/lib/ruby/1.8/timeout.rb:56:in `timeout'
+    /home/userapps_plugins/request_timeout/lib/request_timeout.rb:6:in `perform_action_without_rescue'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/rescue.rb:199:in `perform_action_without_caching'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/caching.rb:678:in `perform_action'
+    /usr/lib/ruby/gems/1.8/gems/activerecord-2.0.2/lib/active_record/connection_adapters/abstract/query_cache.rb:33:in `cache'
+    /usr/lib/ruby/gems/1.8/gems/activerecord-2.0.2/lib/active_record/query_cache.rb:8:in `cache'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/caching.rb:677:in `perform_action'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/base.rb:524:in `send'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/base.rb:524:in `process_without_filters'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/filters.rb:685:in `process_without_session_management_support'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/session_management.rb:123:in `process'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/base.rb:388:in `process'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/dispatcher.rb:171:in `handle_request'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/dispatcher.rb:115:in `dispatch'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/dispatcher.rb:126:in `dispatch_cgi'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/dispatcher.rb:9:in `dispatch'
+    /usr/lib/ruby/gems/1.8/gems/mongrel-1.1.4/bin/../lib/mongrel/rails.rb:76:in `process'
+    /usr/lib/ruby/gems/1.8/gems/mongrel-1.1.4/bin/../lib/mongrel/rails.rb:74:in `synchronize'
+    /usr/lib/ruby/gems/1.8/gems/mongrel-1.1.4/bin/../lib/mongrel/rails.rb:74:in `process'
+    /usr/lib/ruby/gems/1.8/gems/mongrel-1.1.4/bin/../lib/mongrel.rb:159:in `process_client'
+    /usr/lib/ruby/gems/1.8/gems/mongrel-1.1.4/bin/../lib/mongrel.rb:158:in `each'
+    /usr/lib/ruby/gems/1.8/gems/mongrel-1.1.4/bin/../lib/mongrel.rb:158:in `process_client'
+    /usr/lib/ruby/gems/1.8/gems/mongrel-1.1.4/bin/../lib/mongrel.rb:285:in `run'
+    /usr/lib/ruby/gems/1.8/gems/mongrel-1.1.4/bin/../lib/mongrel.rb:285:in `initialize'
+    /usr/lib/ruby/gems/1.8/gems/mongrel-1.1.4/bin/../lib/mongrel.rb:285:in `new'
+    /usr/lib/ruby/gems/1.8/gems/mongrel-1.1.4/bin/../lib/mongrel.rb:285:in `run'
+    /usr/lib/ruby/gems/1.8/gems/mongrel-1.1.4/bin/../lib/mongrel.rb:268:in `initialize'
+    /usr/lib/ruby/gems/1.8/gems/mongrel-1.1.4/bin/../lib/mongrel.rb:268:in `new'
+    /usr/lib/ruby/gems/1.8/gems/mongrel-1.1.4/bin/../lib/mongrel.rb:268:in `run'
+    /usr/lib/ruby/gems/1.8/gems/mongrel-1.1.4/bin/../lib/mongrel/configurator.rb:282:in `run'
+    /usr/lib/ruby/gems/1.8/gems/mongrel-1.1.4/bin/../lib/mongrel/configurator.rb:281:in `each'
+    /usr/lib/ruby/gems/1.8/gems/mongrel-1.1.4/bin/../lib/mongrel/configurator.rb:281:in `run'
+    /usr/lib/ruby/gems/1.8/gems/mongrel-1.1.4/bin/mongrel_rails:128:in `run'
+    /usr/lib/ruby/gems/1.8/gems/mongrel-1.1.4/bin/../lib/mongrel/command.rb:212:in `run'
+    /usr/lib/ruby/gems/1.8/gems/mongrel-1.1.4/bin/mongrel_rails:281
+    /usr/bin/mongrel_rails:19:in `load'
+    /usr/bin/mongrel_rails:19
+
+Rendering /usr/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/templates/rescues/layout.erb (internal_server_error)
+
+
+Processing SportsChartingController#game (for 132.228.195.207 at 2008-05-22 05:01:21) [GET]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo%0ASGFzaHsABjoKQHVzZWR7AA%3D%3D--671bea3ca7d73946a4204a7a3643fc0c06630d08
+  Parameters: {"action"=>"game", "id"=>"79733", "controller"=>"sports_charting"}
+
+
+ArgumentError (wrong number of arguments (2 for 1)):
+    /app/controllers/sports_charting_controller.rb:73:in `build_google_o_meter_chart'
+    /app/controllers/sports_charting_controller.rb:73:in `game'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/base.rb:1158:in `send'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/base.rb:1158:in `perform_action_without_filters'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/filters.rb:697:in `call_filters'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/filters.rb:689:in `perform_action_without_benchmark'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue_without_timeout'
+    /usr/lib/ruby/1.8/benchmark.rb:293:in `measure'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue_without_timeout'
+    /home/userapps_plugins/request_timeout/lib/request_timeout.rb:7:in `perform_action_without_rescue'
+    /usr/lib/ruby/1.8/timeout.rb:56:in `timeout'
+    /home/userapps_plugins/request_timeout/lib/request_timeout.rb:6:in `perform_action_without_rescue'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/rescue.rb:199:in `perform_action_without_caching'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/caching.rb:678:in `perform_action'
+    /usr/lib/ruby/gems/1.8/gems/activerecord-2.0.2/lib/active_record/connection_adapters/abstract/query_cache.rb:33:in `cache'
+    /usr/lib/ruby/gems/1.8/gems/activerecord-2.0.2/lib/active_record/query_cache.rb:8:in `cache'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/caching.rb:677:in `perform_action'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/base.rb:524:in `send'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/base.rb:524:in `process_without_filters'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/filters.rb:685:in `process_without_session_management_support'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/session_management.rb:123:in `process'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/base.rb:388:in `process'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/dispatcher.rb:171:in `handle_request'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/dispatcher.rb:115:in `dispatch'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/dispatcher.rb:126:in `dispatch_cgi'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/dispatcher.rb:9:in `dispatch'
+    /usr/lib/ruby/gems/1.8/gems/mongrel-1.1.4/bin/../lib/mongrel/rails.rb:76:in `process'
+    /usr/lib/ruby/gems/1.8/gems/mongrel-1.1.4/bin/../lib/mongrel/rails.rb:74:in `synchronize'
+    /usr/lib/ruby/gems/1.8/gems/mongrel-1.1.4/bin/../lib/mongrel/rails.rb:74:in `process'
+    /usr/lib/ruby/gems/1.8/gems/mongrel-1.1.4/bin/../lib/mongrel.rb:159:in `process_client'
+    /usr/lib/ruby/gems/1.8/gems/mongrel-1.1.4/bin/../lib/mongrel.rb:158:in `each'
+    /usr/lib/ruby/gems/1.8/gems/mongrel-1.1.4/bin/../lib/mongrel.rb:158:in `process_client'
+    /usr/lib/ruby/gems/1.8/gems/mongrel-1.1.4/bin/../lib/mongrel.rb:285:in `run'
+    /usr/lib/ruby/gems/1.8/gems/mongrel-1.1.4/bin/../lib/mongrel.rb:285:in `initialize'
+    /usr/lib/ruby/gems/1.8/gems/mongrel-1.1.4/bin/../lib/mongrel.rb:285:in `new'
+    /usr/lib/ruby/gems/1.8/gems/mongrel-1.1.4/bin/../lib/mongrel.rb:285:in `run'
+    /usr/lib/ruby/gems/1.8/gems/mongrel-1.1.4/bin/../lib/mongrel.rb:268:in `initialize'
+    /usr/lib/ruby/gems/1.8/gems/mongrel-1.1.4/bin/../lib/mongrel.rb:268:in `new'
+    /usr/lib/ruby/gems/1.8/gems/mongrel-1.1.4/bin/../lib/mongrel.rb:268:in `run'
+    /usr/lib/ruby/gems/1.8/gems/mongrel-1.1.4/bin/../lib/mongrel/configurator.rb:282:in `run'
+    /usr/lib/ruby/gems/1.8/gems/mongrel-1.1.4/bin/../lib/mongrel/configurator.rb:281:in `each'
+    /usr/lib/ruby/gems/1.8/gems/mongrel-1.1.4/bin/../lib/mongrel/configurator.rb:281:in `run'
+    /usr/lib/ruby/gems/1.8/gems/mongrel-1.1.4/bin/mongrel_rails:128:in `run'
+    /usr/lib/ruby/gems/1.8/gems/mongrel-1.1.4/bin/../lib/mongrel/command.rb:212:in `run'
+    /usr/lib/ruby/gems/1.8/gems/mongrel-1.1.4/bin/mongrel_rails:281
+    /usr/bin/mongrel_rails:19:in `load'
+    /usr/bin/mongrel_rails:19
+
+Rendering /usr/lib/ruby/gems/1.8/gems/actionpack-2.0.2/lib/action_controller/templates/rescues/layout.erb (internal_server_error)

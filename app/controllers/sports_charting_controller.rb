@@ -70,7 +70,7 @@ class SportsChartingController < ApplicationController
     # Build the Pie Chart URL using the function in the GChart library
     @game_score_pie_chart = GCharts::GoogleCharts.build_score_pie_chart(@home_team, @home_team_score, @away_team, @away_team_score)
     # Build the Google-o-Meter using the function in the GChart library
-    @game_points_meter = GCharts::GoogleCharts.build_google_o_meter_chart(@game.points[0]["content"])
+    @game_points_meter = GCharts::GoogleCharts.build_google_o_meter_chart(@game.points[0]["content"], @game.points[0]["level"])
     # Build the US Map with the states of each team involved using the hash that was built above
     @game_map = GCharts::GoogleCharts.build_map(@team_hash[@home_team_id],@team_hash[@away_team_id])
   end

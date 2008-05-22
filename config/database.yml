@@ -1,7 +1,14 @@
-development:
-  adapter: sqlite3
-  database: db/development.sqlite3
-
-test:
-  adapter: sqlite3
-  database: db/test.sqlite3
+--- 
+development: 
+  adapter: postgresql
+  username: app17518
+  host: 10.252.154.195
+  database: app17518
+  password: pvLvAHh.cT%fsNSpcti
+test: 
+  adapter: postgresql
+  username: test_app17518
+  host: 10.252.154.195
+  database: test_app17518
+  password: VhzXVH,kE+4
+production: development

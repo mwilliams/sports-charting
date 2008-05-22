@@ -4,8 +4,8 @@ module GCharts
     # Parameters:
     # number - string or integer value between 0-100.  Example) 45 or "45"
     # Returns: A valid URL that renders a Google-o-Meter chart as a PNG image
-    def self.build_google_o_meter_chart(number)
-      "http://chart.apis.google.com/chart?chs=225x125&cht=gom&chd=t:#{number}"
+    def self.build_google_o_meter_chart(number, description)
+      "http://chart.apis.google.com/chart?chs=225x125&cht=gom&chd=t:#{number}&chl=#{description}"
     end
     
     # Builds a pie chart that displays the score of the game

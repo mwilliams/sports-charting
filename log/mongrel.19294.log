@@ -1,9 +1,9 @@
-** Starting Mongrel listening at 0.0.0.0:24418
+** Starting Mongrel listening at 0.0.0.0:19294
 ** Starting Rails with development environment...
 ** Rails loaded.
 ** Loading any Rails specific GemPlugins
 ** ----- Loading Heroku Extensions -----
 ** Signals ready.  TERM => stop.  USR2 => restart.  INT => stop (no restart).
 ** Rails signals registered.  HUP => reload (without restart).  It might not work well.
-** Mongrel 1.1.4 available at 0.0.0.0:24418
+** Mongrel 1.1.4 available at 0.0.0.0:19294
 ** Use CTRL-C to stop.
