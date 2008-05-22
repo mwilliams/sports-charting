@@ -4,11 +4,11 @@ development:
   username: app17518
   host: 10.252.154.195
   database: app17518
-  password: pvLvAHh.cT%fsNSpcti
+  password: nEyCfNL3TKbcSZmPTq
 test: 
   adapter: postgresql
   username: test_app17518
   host: 10.252.154.195
   database: test_app17518
-  password: VhzXVH,kE+4
+  password: 6#I,2NuShGo+eE8eaou
 production: development
