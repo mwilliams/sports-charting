@@ -1,0 +1,162 @@
+# Logfile created on Wed May 21 23:05:53 -0400 2008
+
+Processing SportsChartingController#games (for 0.0.0.0 at 2008-05-21 23:05:53) [GET]
+  Session ID: 
+  Parameters: {"action"=>"games", "id"=>"13312", "controller"=>"sports_charting"}
+Rendering sports_charting/games
+Completed in 0.08459 (11 reqs/sec) | Rendering: 0.00127 (1%) | DB: 0.00000 (0%) | 200 OK [http://test.host/sports_charting/games/13312]
+
+
+Processing SportsChartingController#game (for 0.0.0.0 at 2008-05-21 23:05:53) [GET]
+  Session ID: 
+  Parameters: {"action"=>"game", "id"=>"75664", "controller"=>"sports_charting"}
+Rendering sports_charting/game
+Completed in 0.08983 (11 reqs/sec) | Rendering: 0.00568 (6%) | DB: 0.00000 (0%) | 200 OK [http://test.host/sports_charting/game/75664]
+
+
+Processing SportsChartingController#games (for 0.0.0.0 at 2008-05-21 23:05:53) [GET]
+  Session ID: 
+  Parameters: {"action"=>"games", "id"=>"7073", "controller"=>"sports_charting"}
+Rendering sports_charting/games
+Rendered aywt/games/_game (0.04936)
+Rendered aywt/games/_game (0.00140)
+Rendered aywt/games/_game (0.00137)
+Rendered aywt/games/_game (0.00136)
+Rendered aywt/games/_game (0.00138)
+Rendered aywt/games/_game (0.00133)
+Rendered aywt/games/_game (0.00133)
+Rendered aywt/games/_game (0.00129)
+Rendered aywt/games/_game (0.00141)
+Rendered aywt/games/_game (0.00132)
+Rendered aywt/games/_game (0.00133)
+Rendered aywt/games/_game (0.00132)
+Rendered aywt/games/_game (0.00133)
+Rendered aywt/games/_game (0.00133)
+Completed in 0.27335 (3 reqs/sec) | Rendering: 0.06985 (25%) | DB: 0.00000 (0%) | 200 OK [http://test.host/sports_charting/games/7073]
+
+
+Processing SportsChartingController#index (for 0.0.0.0 at 2008-05-21 23:05:53) [GET]
+  Session ID: 
+  Parameters: {"action"=>"index", "controller"=>"sports_charting"}
+Rendering sports_charting/index
+Completed in 0.00255 (391 reqs/sec) | Rendering: 0.00243 (95%) | DB: 0.00000 (0%) | 200 OK [http://test.host/sports_charting/index]
+
+
+Processing SportsChartingController#teams (for 0.0.0.0 at 2008-05-21 23:05:53) [GET]
+  Session ID: 
+  Parameters: {"action"=>"teams", "controller"=>"sports_charting", "sport"=>"mlb"}
+Rendering sports_charting/teams
+Rendered aywt/teams/_team (0.00064)
+Rendered aywt/teams/_team (0.00031)
+Rendered aywt/teams/_team (0.00024)
+Rendered aywt/teams/_team (0.00024)
+Rendered aywt/teams/_team (0.00024)
+Rendered aywt/teams/_team (0.00024)
+Rendered aywt/teams/_team (0.00024)
+Rendered aywt/teams/_team (0.00024)
+Rendered aywt/teams/_team (0.00025)
+Rendered aywt/teams/_team (0.00024)
+Rendered aywt/teams/_team (0.00024)
+Rendered aywt/teams/_team (0.00024)
+Rendered aywt/teams/_team (0.00024)
+Rendered aywt/teams/_team (0.00024)
+Rendered aywt/teams/_team (0.00024)
+Rendered aywt/teams/_team (0.00024)
+Rendered aywt/teams/_team (0.00024)
+Rendered aywt/teams/_team (0.00024)
+Rendered aywt/teams/_team (0.00009)
+Rendered aywt/teams/_team (0.00025)
+Rendered aywt/teams/_team (0.00024)
+Rendered aywt/teams/_team (0.00024)
+Rendered aywt/teams/_team (0.00024)
+Rendered aywt/teams/_team (0.00024)
+Rendered aywt/teams/_team (0.00024)
+Rendered aywt/teams/_team (0.00024)
+Rendered aywt/teams/_team (0.00024)
+Rendered aywt/teams/_team (0.00024)
+Rendered aywt/teams/_team (0.00024)
+Rendered aywt/teams/_team (0.00030)
+Rendered aywt/teams/_team (0.00025)
+Rendered aywt/teams/_team (0.00024)
+Completed in 0.12018 (8 reqs/sec) | Rendering: 0.01355 (11%) | DB: 0.00000 (0%) | 200 OK [http://test.host/sports_charting/teams/mlb]
+
+
+Processing SportsChartingController#games (for 0.0.0.0 at 2008-05-21 23:06:06) [GET]
+  Session ID: 
+  Parameters: {"action"=>"games", "id"=>"13312", "controller"=>"sports_charting"}
+Rendering sports_charting/games
+Completed in 0.10265 (9 reqs/sec) | Rendering: 0.00327 (3%) | DB: 0.00000 (0%) | 200 OK [http://test.host/sports_charting/games/13312]
+
+
+Processing SportsChartingController#game (for 0.0.0.0 at 2008-05-21 23:06:06) [GET]
+  Session ID: 
+  Parameters: {"action"=>"game", "id"=>"75664", "controller"=>"sports_charting"}
+Rendering sports_charting/game
+Completed in 0.19072 (5 reqs/sec) | Rendering: 0.01167 (6%) | DB: 0.00000 (0%) | 200 OK [http://test.host/sports_charting/game/75664]
+
+
+Processing SportsChartingController#games (for 0.0.0.0 at 2008-05-21 23:06:06) [GET]
+  Session ID: 
+  Parameters: {"action"=>"games", "id"=>"7073", "controller"=>"sports_charting"}
+Rendering sports_charting/games
+Rendered aywt/games/_game (0.01754)
+Rendered aywt/games/_game (0.00234)
+Rendered aywt/games/_game (0.00240)
+Rendered aywt/games/_game (0.00236)
+Rendered aywt/games/_game (0.00246)
+Rendered aywt/games/_game (0.00231)
+Rendered aywt/games/_game (0.00229)
+Rendered aywt/games/_game (0.00224)
+Rendered aywt/games/_game (0.00230)
+Rendered aywt/games/_game (0.00230)
+Rendered aywt/games/_game (0.00231)
+Rendered aywt/games/_game (0.00234)
+Rendered aywt/games/_game (0.00230)
+Rendered aywt/games/_game (0.00231)
+Completed in 0.43987 (2 reqs/sec) | Rendering: 0.06128 (13%) | DB: 0.00000 (0%) | 200 OK [http://test.host/sports_charting/games/7073]
+
+
+Processing SportsChartingController#index (for 0.0.0.0 at 2008-05-21 23:06:06) [GET]
+  Session ID: 
+  Parameters: {"action"=>"index", "controller"=>"sports_charting"}
+Rendering sports_charting/index
+Completed in 0.00317 (315 reqs/sec) | Rendering: 0.00298 (94%) | DB: 0.00000 (0%) | 200 OK [http://test.host/sports_charting/index]
+
+
+Processing SportsChartingController#teams (for 0.0.0.0 at 2008-05-21 23:06:06) [GET]
+  Session ID: 
+  Parameters: {"action"=>"teams", "controller"=>"sports_charting", "sport"=>"mlb"}
+Rendering sports_charting/teams
+Rendered aywt/teams/_team (0.00106)
+Rendered aywt/teams/_team (0.00046)
+Rendered aywt/teams/_team (0.00040)
+Rendered aywt/teams/_team (0.00040)
+Rendered aywt/teams/_team (0.00040)
+Rendered aywt/teams/_team (0.00040)
+Rendered aywt/teams/_team (0.00040)
+Rendered aywt/teams/_team (0.00040)
+Rendered aywt/teams/_team (0.00040)
+Rendered aywt/teams/_team (0.00040)
+Rendered aywt/teams/_team (0.00040)
+Rendered aywt/teams/_team (0.00039)
+Rendered aywt/teams/_team (0.00040)
+Rendered aywt/teams/_team (0.00039)
+Rendered aywt/teams/_team (0.00040)
+Rendered aywt/teams/_team (0.00046)
+Rendered aywt/teams/_team (0.00050)
+Rendered aywt/teams/_team (0.00040)
+Rendered aywt/teams/_team (0.00012)
+Rendered aywt/teams/_team (0.00040)
+Rendered aywt/teams/_team (0.00040)
+Rendered aywt/teams/_team (0.00040)
+Rendered aywt/teams/_team (0.00042)
+Rendered aywt/teams/_team (0.00039)
+Rendered aywt/teams/_team (0.00039)
+Rendered aywt/teams/_team (0.00039)
+Rendered aywt/teams/_team (0.00040)
+Rendered aywt/teams/_team (0.00040)
+Rendered aywt/teams/_team (0.00040)
+Rendered aywt/teams/_team (0.00039)
+Rendered aywt/teams/_team (0.00039)
+Rendered aywt/teams/_team (0.00039)
+Completed in 0.21203 (4 reqs/sec) | Rendering: 0.02052 (9%) | DB: 0.00000 (0%) | 200 OK [http://test.host/sports_charting/teams/mlb]

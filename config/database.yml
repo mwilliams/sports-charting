@@ -1,14 +1,7 @@
---- 
-development: 
-  adapter: postgresql
-  username: app17518
-  host: 10.252.154.195
-  database: app17518
-  password: DG=bW3@n5v2%
-test: 
-  adapter: postgresql
-  username: test_app17518
-  host: 10.252.154.195
-  database: test_app17518
-  password: uKlBbSc-eVg8
-production: development
+development:
+  adapter: sqlite3
+  database: db/development.sqlite3
+
+test:
+  adapter: sqlite3
+  database: db/test.sqlite3
