@@ -1,4 +1,4 @@
-<h1>Select a team below:</h1>
+<h1>Select an <%= params[:sport].to_s.upcase! %> team below:</h1>
 <ul>
   <%= render :partial => @teams %>
 </ul>

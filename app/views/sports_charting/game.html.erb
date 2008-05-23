@@ -1,29 +1,23 @@
-<center>
-  <h1><%= [@away_team,@home_team].join(" vs. ") %></h1>
-  <h2><%= @game.time_left %></h2>
-  <p><%= image_tag @game_map %>
-  <% unless @away_team_score == "0" && @home_team_score == "0" %>
-    <p><%= image_tag @game_score_pie_chart %>
-    <% else %>
-    <h3>Currently No Score.</h3>
-  <% end %>
-  <h2>Excitement Level:</h2>
-  <p><%= image_tag @game_points_meter %>
-  <h3>
-    <h2>News:</h2>
-    <ul>
-      <% if !@game.news.first.empty? %> 
-        <% @game.news.each do |news| %>
-          <% news["story"].each do |story| %> 
-            <li><%= link_to story["title"], story["link"].to_s %></li>
-          <% end %>
+<h1><%= [[@away_team_city,@away_team].join(' '),[@home_team_city,@home_team].join(' ')].join( " @ ") %></h1>
+<h2><%= @game.time_left %> <%= @rationale %></h2>
+<p><%= image_tag @game_map %>
+<% unless @away_team_score == "0" && @home_team_score == "0" %>
+  <p><%= image_tag @game_score_pie_chart %>
+<% else %>
+  <h3>Currently No Score.</h3>
+<% end %>
+<p><%= image_tag @game_points_meter %>
+<h3>
+  <h2>News:</h2>
+  <ul>
+    <% if !@game.news.first.empty? %> 
+      <% @game.news.each do |news| %>
+        <% news["story"].each do |story| %> 
+          <li><%= link_to story["title"], story["link"].to_s %></li>
         <% end %>
-      <% else %>
-        <li>No News Items</li>
       <% end %>
-    </ul>
-  </h3>
-</center>
-
-<% #Test %>
-
+    <% else %>
+      <li>No News Items</li>
+    <% end %>
+  </ul>
+</h3>

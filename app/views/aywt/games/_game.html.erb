@@ -1,1 +1,4 @@
-<li><%= link_to [game.teams[0]["name"],game.teams[1]["name"]].join(" vs. "), :controller => 'sports_charting', :action => 'game', :id => game.id %> - <%= game.date.to_s.to_datetime.to_s(:long) %> </li>
+<tr>
+  <td><%= link_to [game.teams[0]["name"],game.teams[1]["name"]].join(" @ "), :controller => 'sports_charting', :action => 'game', :id => game.id %></td>
+  <td><%= game.date.to_s.to_datetime.to_s(:long) %></td>
+</tr>

@@ -1,0 +1,27 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+    <meta name="description" content="A system utlizing two web services for displaying sports scores as charts." />
+    <meta name="keywords" content="web service, sports, nfl, nhl, mlb, ruby on rails, heroku" />
+    <title>Live Sports Scoring System</title>
+  </head>
+  <body>
+    <div style="width:auto">
+      <center>
+        <%= yield %>
+        <hr>
+        <h3>
+          Quick Links: 
+          <%= link_to "MLB", :controller => 'sports_charting', :action => 'teams', :sport => 'mlb' %> |
+          <%= link_to "NFL", :controller => 'sports_charting', :action => 'teams', :sport => 'nfl' %> |
+          <%= link_to "NFL", :controller => 'sports_charting', :action => 'teams', :sport => 'nhl' %> |
+          <%= link_to "NBA", :controller => 'sports_charting', :action => 'teams', :sport => 'nba' %>
+        </h3>
+        <p><strong>Developed by Matthew Williams for SWE5900 (SOA&WS) @ <%= link_to "FIT", 'http://www.fit.edu' %>.</strong></p>
+        <p><strong>Data provided by <%= link_to "AreYouWatchingThis.com", 'http://www.areyouwatchingthis.com' %> and charting by <%= link_to "Google", 'http://www.google.com' %></strong></p>
+      </center>
+    </div>
+  </body>
+</html>

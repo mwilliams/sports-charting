@@ -62,8 +62,11 @@ class SportsChartingController < ApplicationController
     @game = AYWT::Game.get_game_details(@id)
     @away_team = @game.teams[0]["name"]
     @away_team_id = @game.teams[0]["id"]
+    @away_team_city = @game.teams[0]["city"]
     @home_team = @game.teams[1]["name"]
     @home_team_id = @game.teams[1]["id"]
+    @home_team_city = @game.teams[1]["city"]
+    @rationale = @game.rationale
     # If there is no score element, set the score variables to 0 so the pie chart doesn't return an error
     @game.teams[0]["score"] ? @away_team_score = @game.teams[0]["score"] : @away_team_score = "0"
     @game.teams[1]["score"] ? @home_team_score = @game.teams[1]["score"] : @home_team_score = "0"
