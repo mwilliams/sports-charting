@@ -49,7 +49,7 @@ class SportsChartingController < ApplicationController
       "13386" => "PA", # Pirates
       "13387" => "CA", # Padres
       "13388" => "CA", # Giants
-      "7075" => "FL", # Mariners
+      "7075" => "WA", # Mariners
       "13389" => "MS", # Cardinals
       "7076" => "FL", # Rays
       "7077" => "TX", # Rangers
